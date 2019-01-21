@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import Navigation from './navigation'
-import Header from './header'
+import Navigation from './navigation/navigation'
 import { Container, Row, Col, Jumbotron } from 'reactstrap'
 import './layout.css'
 
@@ -20,7 +19,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header/>
+        <Navigation/>
         <Container>
           {children}
         </Container>

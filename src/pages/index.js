@@ -19,49 +19,16 @@ const IndexPage = () => (
         `goutaret`,
       ]}
     />
-    <Jumbotron className = "mt-5">
-      <Row>
-        <Col className="col-md-3 col-md-offset-1 text-center">
-          <div className="panel panel-default">
-            <div className="panel-body">
-              <img className="img-responsive" src={avatar} />
-            </div>
-          </div>
-        </Col>
-        <Col className="col-md-8">
-          <h1 class="welcomeText heading" id="bla">
-            Yohann Goutaret
-          </h1>
-        </Col>
-        <h3 class="welcomeText headingInfo">Développeur FullStack</h3>
-      </Row>
-    </Jumbotron>
+    <Container className="text-center mt-5">
+      <img className="img-fluid mb-5 d-block mx-auto image-profile" src={avatar} />
+      <h1 className=" mb-0">Yohann Goutaret</h1>
+      <hr className="start-light"></hr>
+      <h2 class="font-weight-light mb-0">Développeur FullStack - Back-end</h2>
+    </Container>
+    
 
-    <h3 class="introBloc">
-      <span class="glyphicon glyphicon-user" /> Qui suis-je?
-    </h3>
-    <Jumbotron>
-      <Row>
-        <div align="justify">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Petite présentation</h3>
-              <h3 class="panel-title" />
-            </div>
-            <div class="panel-body">
-              <p class="font21">
-                Je m’appelle Yohann GOUTARET j’ai 26 ans et je suis Développeur
-                FullStack en poste actuellement.
-              </p>
-              <p class="font21">
-                Passionné par le monde informatique je souhaite mettre à profit
-                mes compétences en développement d'application web et logiciel.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Row>
-    </Jumbotron>
+        
+
   </Layout>
 )
 

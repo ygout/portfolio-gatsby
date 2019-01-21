@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap'
+import './navigation.css'
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <>
-        <Navbar color="light" light className="fixed-top" expand="md">
+        <Navbar dark className="fixed-top navbar-custom" expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Container>
