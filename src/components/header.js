@@ -1,20 +1,59 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
-import Navigation from './navigation/navigation';
+import {
+  Container,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from 'reactstrap'
 
-const Header = () => (
- <>
-  <Navigation></Navigation>
- </>
-)
+export default class Header extends React.Component {
+  constructor(props) {
+    super(props)
 
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
-export default Header
+    this.toggle = this.toggle.bind(this)
+    this.state = {
+      isOpen: false,
+    }
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    })
+  }
+  render() {
+    return (
+      <>
+        <Navbar dark className="fixed-top navbar-custom" expand="md">
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Container>
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <NavLink href="/Home/">Accueil</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/Projects/">Projets</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/CV">CV</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/Contact">Contact</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="https://github.com/reactstrap/reactstrap">
+                    GitHub
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Container>
+          </Collapse>
+        </Navbar>
+      </>
+    )
+  }
+}

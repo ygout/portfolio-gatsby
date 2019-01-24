@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import Navigation from './navigation/navigation'
+import Header from './Header'
 import { Container, Row, Col, Jumbotron } from 'reactstrap'
-import './layout.css'
-
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,15 +17,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Navigation/>
+        <Header/>
         <Container>
           {children}
         </Container>
-        {/* <Container className="h-100">
-         <Row className='h-100 align-items-center'>
-          <div> test </div>
-         </Row>
-       </Container> */}
       </>
     )}
   />

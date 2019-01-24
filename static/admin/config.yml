@@ -1,0 +1,59 @@
+backend:
+  name: test-repo
+
+media_folder: static/images/uploads
+public_folder: /images
+editor:
+  preview: false
+collections:
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'src'
+    create: true
+    fields:
+      - { name: 'title', label: 'Title', required: true }
+      - {
+          name: 'Featured Image',
+          label: 'thumbnail',
+          widget: 'image',
+          required: false,
+        }
+      - {
+          name: 'gallery',
+          label: 'Gallery',
+          widget: 'list',
+          field: { label: Image, name: image, widget: image },
+          required: false,
+        }
+      - {
+          name: 'description',
+          label: 'Description',
+          widget: 'markdown',
+          required: false,
+        }
+      - { name: 'outils', label: 'Tools', widget: 'markdown', required: false }
+      - {
+          name: 'langages',
+          label: 'Langages',
+          widget: 'markdown',
+          required: false,
+        }
+      - {
+          name: 'results',
+          label: 'Results',
+          widget: 'markdown',
+          required: false,
+        }
+      - {
+          name: 'category',
+          label: 'Category',
+          widget: 'select',
+          default: 'WEB',
+          options:
+            [
+              { label: 'Web', value: 'WEB' },
+              { label: 'Logiciel', value: 'SOFTWARE' },
+              { label: 'Mobile', value: 'MOBILE' },
+            ],
+          required: true,
+        }

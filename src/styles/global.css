@@ -1,3 +1,4 @@
+
 body {
     padding-top: 60px;
 }
@@ -5,4 +6,21 @@ body {
 .image-profile {
     width: 40vh;
     height: 40vh;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: #2c3e50;
+}
+hr.star-light,
+hr.star-dark {
+  max-width: 30rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
