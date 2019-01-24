@@ -13,8 +13,8 @@ collections:
     fields:
       - { name: 'title', label: 'Title', required: true }
       - {
-          name: 'Featured Image',
-          label: 'thumbnail',
+          name: 'thumbnail',
+          label: 'Thumbnail',
           widget: 'image',
           required: false,
         }

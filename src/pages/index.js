@@ -1,11 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import avatar from '../images/avatar-circle-B.png' // Tell Webpack this JS file uses this image
-import { Container, Row, Col, Jumbotron } from 'reactstrap'
+
 const IndexPage = () => (
   <Layout>
     <SEO

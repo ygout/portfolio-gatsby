@@ -4,7 +4,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -33,10 +32,10 @@ export default class Header extends React.Component {
             <Container>
               <Nav className="mr-auto" navbar>
                 <NavItem>
-                  <NavLink href="/Home/">Accueil</NavLink>
+                  <NavLink href="/">Accueil</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/Projects/">Projets</NavLink>
+                  <NavLink href="/projects/">Projets</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/CV">CV</NavLink>
