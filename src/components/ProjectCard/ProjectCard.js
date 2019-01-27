@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProjectCard.css'
-import { withPrefix } from 'gatsby'
+// import { withPrefix } from 'gatsby'
+import Img from "gatsby-image"
 
 export default class ProjectCard extends React.Component {
   constructor(props) {
@@ -12,10 +13,11 @@ export default class ProjectCard extends React.Component {
     console.log('this.props.project.thumbnail', this.props.project.thumbnail)
     return (
       <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
-        <img
+      <Img fluid={this.props.project.thumbnail.childImageSharp.fluid} alt="cool stuff." />
+        {/* <img
           className="image"
           src={withPrefix(this.props.project.thumbnail)}
-        />
+        /> */}
         <a
           className="overlay"
           href="https://unsplash.com/photos/_Ajm-ewEC24"

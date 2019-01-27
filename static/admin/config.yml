@@ -1,6 +1,7 @@
 backend:
-  name: test-repo
-
+  name: github
+  repo: ygout/portfolio-gatsby # Path to your GitHub repository
+publish_mode: editorial_workflow
 media_folder: static/images/uploads
 public_folder: /images
 editor:
