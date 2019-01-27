@@ -1,4 +1,6 @@
 module.exports = {
+  // Note: it must *not* have a trailing slash.
+  pathPrefix: `/images`,
   siteMetadata: {
     title: `Portfolio YG`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,

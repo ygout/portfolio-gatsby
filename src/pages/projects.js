@@ -1,8 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import 'bootstrap/dist/css/bootstrap.min.css'
-// import GridProject from '../components/GridProject'
+import GridProject from '../components/GridProject'
 import { graphql } from 'gatsby';
 
 const ProjectsPage = ({ data }) => {
@@ -21,11 +20,7 @@ const ProjectsPage = ({ data }) => {
           `goutaret`,
         ]}
       />
-      {/* {projects.map( project => (
-        <GridProject></GridProject>
-    ))} */}
-
-
+       <GridProject projects = {data.allMarkdownRemark.edges}></GridProject>
     </Layout>
   )
 }

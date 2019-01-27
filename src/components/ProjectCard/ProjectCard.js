@@ -1,37 +1,35 @@
 import React from 'react'
 import './ProjectCard.css'
+import { withPrefix } from 'gatsby'
 
 export default class ProjectCard extends React.Component {
-    constructor(props) {
-        super(props)
+  constructor(props) {
+    super(props)
+  }
 
-        this.state = {
-            project: this.project,
-        }
-    }
+  render() {
+    console.log('project', this.props.project)
+    console.log('this.props.project.thumbnail', this.props.project.thumbnail)
+    return (
+      <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
+        <img
+          className="image"
+          src={withPrefix(this.props.project.thumbnail)}
+        />
+        <a
+          className="overlay"
+          href="https://unsplash.com/photos/_Ajm-ewEC24"
+          target="_blank"
+        >
+          <div className="text">
+            <p className="title">Firework</p>
 
-    render() {
-        return (
-            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
-                <img
-                    className="image"
-                    src="http://www.bigart.design/images/other/stephanie-mccabe-24620-600x600.jpg"
-                />
-                <a
-                    className="overlay"
-                    href="https://unsplash.com/photos/_Ajm-ewEC24"
-                    target="_blank"
-                >
-                    <div className="text">
-                        <p className="title">Firework</p>
+            <div className="divider" />
 
-                        <div className="divider" />
-
-                        <p className="sub-title">Stefanie McCabe</p>
-                    </div>
-                </a>
-            </div>
-
-        )
-    }
+            <p className="sub-title">Stefanie McCabe</p>
+          </div>
+        </a>
+      </div>
+    )
+  }
 }
