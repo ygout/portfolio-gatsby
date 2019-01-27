@@ -3,13 +3,13 @@ backend:
   repo: ygout/portfolio-gatsby # Path to your GitHub repository
 publish_mode: editorial_workflow
 media_folder: static/images/uploads
-public_folder: /images
+public_folder: src/images
 editor:
   preview: false
 collections:
   - name: 'projects'
     label: 'Projects'
-    folder: '/pages/projects'
+    folder: 'src/pages/projects'
     create: true
     fields:
       - { name: 'title', label: 'Title', required: true }
