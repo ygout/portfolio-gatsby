@@ -9,7 +9,7 @@ editor:
 collections:
   - name: 'projects'
     label: 'Projects'
-    folder: 'src'
+    folder: '/pages/projects'
     create: true
     fields:
       - { name: 'title', label: 'Title', required: true }
