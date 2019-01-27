@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: ygout/portfolio-gatsby # Path to your GitHub repository
-media_folder: 'static/images/uploads'
-public_folder: 'src/images'
+media_folder: 'static/images'
+public_folder: '/images'
 editor:
   preview: false
 collections:

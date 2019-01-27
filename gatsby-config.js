@@ -1,6 +1,4 @@
 module.exports = {
-  // Note: it must *not* have a trailing slash.
-  pathPrefix: `/images`,
   siteMetadata: {
     title: `Portfolio YG`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -12,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
-        path: `${__dirname}/static/images/uploads`,
+        path: `${__dirname}/static/images`,
       },
     },
     {
@@ -30,12 +28,33 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-remark-images`,
+      resolve: 'gatsby-transformer-remark',
       options: {
-        maxWidth: 1080,
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 2048,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
+        ],
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
