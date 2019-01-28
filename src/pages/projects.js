@@ -35,9 +35,7 @@ export const query = graphql`
         frontmatter {
           title
           description
-          thumbnail
-          results
-          
+          slug
         }
       }
     }

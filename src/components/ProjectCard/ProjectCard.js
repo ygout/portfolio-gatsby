@@ -7,6 +7,7 @@ export default class ProjectCard extends React.Component {
   }
 
   render() {
+    console.log('slug?', this.props.project.slug)
     return (
       <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
         <img className="image" src={this.props.project.thumbnail} />
