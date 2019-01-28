@@ -2,11 +2,10 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import GridProject from '../components/GridProject'
-import { graphql } from 'gatsby';
+import { graphql } from 'gatsby'
 
 const ProjectsPage = ({ data }) => {
-
-  console.log('data', data);
+  console.log('data', data)
   return (
     <Layout>
       <SEO
@@ -20,7 +19,7 @@ const ProjectsPage = ({ data }) => {
           `goutaret`,
         ]}
       />
-       <GridProject projects = {data.allMarkdownRemark.edges}></GridProject>
+      <GridProject projects={data.allMarkdownRemark.edges} />
     </Layout>
   )
 }
@@ -28,17 +27,20 @@ const ProjectsPage = ({ data }) => {
 export default ProjectsPage
 
 export const query = graphql`
-{
-  allMarkdownRemark {
-    edges {
-      node {
-        frontmatter {
-          title
-          description
-          slug
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            thumbnail
+          }
         }
       }
     }
   }
-}
 `

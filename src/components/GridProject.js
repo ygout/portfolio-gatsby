@@ -15,7 +15,7 @@ export default class GridProject extends React.Component {
       <section className="containe margin-middle">
         <div className="row align-items-center">
           {this.state.projects.map((project, i) => (
-            <ProjectCard key={i} project={project.node.frontmatter} />
+            <ProjectCard key={project.node.id} project={project.node} />
           ))}
         </div>
       </section>
