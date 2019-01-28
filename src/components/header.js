@@ -44,7 +44,7 @@ export default class Header extends React.Component {
                   <NavLink href="/Contact">Contact</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
+                  <NavLink target="_blank" href="https://github.com/ygout" >
                     GitHub
                   </NavLink>
                 </NavItem>

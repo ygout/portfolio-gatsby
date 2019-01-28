@@ -15,10 +15,24 @@ export const ProjectPageTemplate = ({
   gallery,
   results,
 }) => (
-  <section>
+    <div className="row">
+      <div class="col-md-8">
+        <img class="img-responsive" src="http://placehold.it/750x500" alt="" />
+      </div>
+      <div class="col-md-4">
+        <h3>Description</h3>
+        <p>{ description }</p>
+        <h3>Projet details</h3>
+        <ul>
+          <li>{ outils }</li>
+          <li>{ langages }</li>
 
-  </section>
-)
+        </ul>
+        <h3>Bilan</h3>
+        <p>{ results } </p>
+      </div>
+    </div>
+  )
 
 
 
@@ -42,7 +56,7 @@ const ProjectPage = ({ data }) => {
 
 export default ProjectPage
 
-// export const projectPageQuery = graphql`
+    // export const projectPageQuery = graphql`
 //   query ProjectPage($id: String!) {
 //     markdownRemark(id: { eq: $id }) {
 //       frontmatter {
