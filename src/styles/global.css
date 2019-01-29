@@ -31,9 +31,11 @@ hr.star-dark {
 
   .carousel-inner > .carousel-item > img {
     height:300px;
+    width: auto;
   }
   .carousel-inner > .carousel-item > img {
     height:300px;
+    width: auto;
   }
 
   .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
@@ -51,9 +53,9 @@ hr.star-dark {
     background-color:#F5F5F5 !important;
   }
 
+  /* .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date{
+    left: 150% !important;
+  } */
   .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
-      right: 150% !important;
-  }
-  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-      left: 150% !important;
+    right: 150% !important;
   }

@@ -13,10 +13,10 @@ export const ProjectPageTemplate = ({
 }) => {
   return(
     <>
-      <div className="row mt-5">
-        <CarouselProject items={gallery}>
+ 
+        <CarouselProject className="mt-5" items={gallery}>
         </CarouselProject>
-      </div>
+
       <div className="row mt-3">
         <div>
           <h3>Description</h3>
