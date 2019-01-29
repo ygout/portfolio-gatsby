@@ -25,8 +25,14 @@ hr.star-dark {
   margin-right: auto;
 }
 
-.img-desc {
-    width: 700px; /* You can set the dimensions to whatever you want */
-    height: 500px;
-    object-fit: cover;
-}
+.carousel-control-prev,.carousel-control-next {
+    cursor:pointer;
+  }
+
+  .carousel-inner > .carousel-item > img {
+    height:300px;
+  }
+  .carousel-inner > .carousel-item > img {
+    height:300px;
+  }
+

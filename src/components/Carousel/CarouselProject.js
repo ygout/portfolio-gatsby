@@ -16,7 +16,7 @@ class CarouselProject extends Component {
         this.goToIndex = this.goToIndex.bind(this);
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
-        this.props.items.forEach((item,i) => {
+        this.props.items.forEach((item, i) => {
             this.props.items[i] = {
                 src: item
             }
@@ -53,15 +53,13 @@ class CarouselProject extends Component {
         const { activeIndex } = this.state;
 
         const slides = this.items.map((item) => {
-            console.log('i', item)
             return (
-                <CarouselItem
+                <CarouselItem 
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={item.src}
                 >
                     <img src={item.src} />
-                    <CarouselCaption captionText={item.src} captionHeader={item.src} />
                 </CarouselItem>
             );
         });
