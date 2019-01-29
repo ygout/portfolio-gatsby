@@ -1,6 +1,6 @@
 ---
 title: test
-thumbnail: /images/777751.jpg
+thumbnail: /images/baby-groot.jpg
 gallery:
   - {}
 description: ezae
