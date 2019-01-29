@@ -16,9 +16,12 @@ class CarouselProject extends Component {
         this.goToIndex = this.goToIndex.bind(this);
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
-        this.items = [{
-            "src": this.props.items
-        }];
+        this.props.items.forEach((item,i) => {
+            this.props.items[i] = {
+                src: item
+            }
+        });
+        this.items = this.props.items;
 
     }
     onExiting() {

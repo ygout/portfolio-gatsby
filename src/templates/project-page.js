@@ -10,36 +10,37 @@ export const ProjectPageTemplate = ({
   langages,
   gallery,
   results,
-  thumbnail,
-}) => (
-  <>
-    <div className="row mt-5">
-      <CarouselProject items={thumbnail}>
-      </CarouselProject>
-    </div>
-    <div className="row mt-3">
-      <div>
-        <h3>Description</h3>
-        <p>{description}</p>
+}) => {
+  return(
+    <>
+      <div className="row mt-5">
+        <CarouselProject items={gallery}>
+        </CarouselProject>
       </div>
-    </div>
-    <div className="row">
-      <div>
-        <h3>Projet details</h3>
-        <ul>
-          <li>{tools}</li>
-          <li>{langages}</li>
-        </ul>
+      <div className="row mt-3">
+        <div>
+          <h3>Description</h3>
+          <p>{description}</p>
+        </div>
       </div>
-    </div>
-    <div className="row">
-      <div>
-        <h3>Bilan</h3>
-        <p>{results} </p>
+      <div className="row">
+        <div>
+          <h3>Projet details</h3>
+          <ul>
+            <li>{tools}</li>
+            <li>{langages}</li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div className="row">
+        <div>
+          <h3>Bilan</h3>
+          <p>{results} </p>
+        </div>
+      </div>
     </>
   )
+}
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -72,6 +73,7 @@ export const projectPageQuery = graphql`
         results
         category
         langages
+        gallery
       }
     }
   }
