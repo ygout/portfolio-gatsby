@@ -28,6 +28,7 @@
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.3.0",
     "react-transition-group": "^2.5.3",
     "react-vertical-timeline-component": "^2.3.1",
     "reactstrap": "^7.1.0",
