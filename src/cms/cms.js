@@ -4,7 +4,9 @@
  * `registerPreviewTemplate`.
  */
 import CMS from 'netlify-cms'
+import ProjectPagePreview from './preview-templates/ProjectPagePreview'
 
+CMS.registerPreviewTemplate('projects', ProjectPagePreview);
 // /**
 //  * Any imported styles will automatically be applied to the editor preview
 //  * pane, there is no need to use `registerPreviewStyle` for imported styles.

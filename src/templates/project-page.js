@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import CarouselProject from '../components/Carousel/CarouselProject'
 
 export const ProjectPageTemplate = ({
   title,
@@ -11,23 +12,34 @@ export const ProjectPageTemplate = ({
   results,
   thumbnail,
 }) => (
-  <div className="row mt-5">
-    <div className="col-md-8">
-      <img className="img-responsive img-desc" src={thumbnail} alt="" />
+  <>
+    <div className="row mt-5">
+      <CarouselProject items={thumbnail}>
+      </CarouselProject>
     </div>
-    <div className="col-md-4">
-      <h3>Description</h3>
-      <p>{description}</p>
-      <h3>Projet details</h3>
-      <ul>
-        <li>{tools}</li>
-        <li>{langages}</li>
-      </ul>
-      <h3>Bilan</h3>
-      <p>{results} </p>
+    <div className="row mt-3">
+      <div>
+        <h3>Description</h3>
+        <p>{description}</p>
+      </div>
     </div>
-  </div>
-)
+    <div className="row">
+      <div>
+        <h3>Projet details</h3>
+        <ul>
+          <li>{tools}</li>
+          <li>{langages}</li>
+        </ul>
+      </div>
+    </div>
+    <div className="row">
+      <div>
+        <h3>Bilan</h3>
+        <p>{results} </p>
+      </div>
+    </div>
+    </>
+  )
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -41,7 +53,7 @@ const ProjectPage = ({ data }) => {
         langages={frontmatter.langages}
         gallery={frontmatter.gallery}
         results={frontmatter.results}
-        thumbnail = {frontmatter.thumbnail}
+        thumbnail={frontmatter.thumbnail}
       />
     </Layout>
   )
