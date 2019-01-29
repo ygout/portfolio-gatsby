@@ -2,8 +2,8 @@
 title: test
 thumbnail: /images/baby-groot.jpg
 gallery:
-  - /images/man.png
-  - /images/ivgadkhv_400x400.jpg
+  - /images/baby-groot.jpg
+  - /images/777751.jpg
 description: ezae
 outils: eza
 langages: eza
