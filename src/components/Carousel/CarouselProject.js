@@ -16,6 +16,7 @@ class CarouselProject extends Component {
         this.goToIndex = this.goToIndex.bind(this);
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
+        this.interval  = false;
         this.props.items.forEach((item, i) => {
             this.props.items[i] = {
                 src: item
@@ -69,6 +70,7 @@ class CarouselProject extends Component {
                 activeIndex={activeIndex}
                 next={this.next}
                 previous={this.previous}
+                interval={this.interval}
             >
                 <CarouselIndicators items={this.items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
                 {slides}

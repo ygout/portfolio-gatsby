@@ -36,3 +36,17 @@ hr.star-dark {
     height:300px;
   }
 
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    background-color: #F5F5F5;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content::before {
+    border-left-color:#F5F5F5 !important;
+  }
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before, .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before {
+    border-right-color: #F5F5F5 !important;
+  }
+  .vertical-timeline::before {
+    background: #F5F5F5 !important;
+    background-color:#F5F5F5 !important;
+  }

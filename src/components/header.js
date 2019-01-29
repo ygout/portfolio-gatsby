@@ -38,10 +38,10 @@ export default class Header extends React.Component {
                   <NavLink href="/projects/">Projets</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/CV">CV</NavLink>
+                  <NavLink href="/resume">CV</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/Contact">Contact</NavLink>
+                  <NavLink href="/contact">Contact</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink target="_blank" href="https://github.com/ygout" >
