@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProjectCard.css'
+import { Link } from 'gatsby'
 
 export default class ProjectCard extends React.Component {
   constructor(props) {
@@ -7,19 +8,21 @@ export default class ProjectCard extends React.Component {
   }
 
   render() {
-    console.log('slug?', this.props.project.fields.slug)
+ 
+    const { project } = this.props;
+    console.log('project', project);
     return (
       <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
-        <img className="image" src={this.props.project.frontmatter.thumbnail} />
-        <a
+        <img className="image" src={project.frontmatter.thumbnail} />
+        <Link
           className="overlay"
-          href={this.props.project.fields.slug}
+          to={project.fields.slug}
           target="_blank"
         >
           <div className="text">
-            <p className="sub-title">{this.props.project.frontmatter.title}</p>
+            <p className="sub-title">{project.frontmatter.title}</p>
           </div>
-        </a>
+        </Link>
       </div>
     )
   }

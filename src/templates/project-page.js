@@ -9,12 +9,13 @@ export const ProjectPageTemplate = ({
   langages,
   gallery,
   results,
+  thumbnail,
 }) => (
-  <div className="row">
-    <div class="col-md-8">
-      <img class="img-responsive" src="http://placehold.it/750x500" alt="" />
+  <div className="row mt-5">
+    <div className="col-md-8">
+      <img className="img-responsive img-desc" src={thumbnail} alt="" />
     </div>
-    <div class="col-md-4">
+    <div className="col-md-4">
       <h3>Description</h3>
       <p>{description}</p>
       <h3>Projet details</h3>
@@ -40,6 +41,7 @@ const ProjectPage = ({ data }) => {
         langages={frontmatter.langages}
         gallery={frontmatter.gallery}
         results={frontmatter.results}
+        thumbnail = {frontmatter.thumbnail}
       />
     </Layout>
   )

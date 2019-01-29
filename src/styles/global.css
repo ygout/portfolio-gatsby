@@ -24,3 +24,9 @@ hr.star-dark {
   margin-left: auto;
   margin-right: auto;
 }
+
+.img-desc {
+    width: 700px; /* You can set the dimensions to whatever you want */
+    height: 500px;
+    object-fit: cover;
+}

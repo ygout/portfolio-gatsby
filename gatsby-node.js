@@ -13,27 +13,32 @@ exports.createPages = ({ actions, graphql }) => {
   const projectTemplate = path.resolve(`src/templates/project-page.js`)
 
   return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              slug
-            }
+  {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          fields {
+            slug
           }
         }
       }
     }
+  }
   `).then(result => {
     if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const id = node.id;
       createPage({
         path: node.fields.slug,
         component: projectTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          id,
+        }, // additional data can be passed via context
       })
     })
   })
