@@ -12,14 +12,11 @@ export const ProjectPageTemplate = ({
   gallery,
   results,
 }) => {
+
   return (
     <>
       <Container>
-        {gallery ? (
-          <CarouselProject className="mt-5" items={gallery}>
-          </CarouselProject>
-          ): null
-        }
+        {gallery ? <CarouselProject className="mt-5" items={gallery} /> : null}
 
         <div className="row mt-3">
           <div>
@@ -43,7 +40,6 @@ export const ProjectPageTemplate = ({
           </div>
         </div>
       </Container>
-
     </>
   )
 }
