@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './Header'
-import { Container} from 'reactstrap'
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -17,10 +17,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header/>
-        <Container>
-          {children}
-        </Container>
+        <Header />
+        {children}
+
       </>
     )}
   />

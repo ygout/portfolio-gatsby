@@ -1,15 +1,16 @@
 import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 import GridProject from '../components/GridProject'
 import { graphql } from 'gatsby'
+import { Container } from 'reactstrap'
 
 const ProjectsPage = ({ data }) => {
   console.log('data', data)
   return (
     <Layout>
       <SEO
-        title="Accueil"
+        title="Projets"
         keywords={[
           `portoflio`,
           `accueil`,
@@ -19,7 +20,10 @@ const ProjectsPage = ({ data }) => {
           `goutaret`,
         ]}
       />
-      <GridProject projects={data.allMarkdownRemark.edges} />
+      <Container className="mt-5">
+        <h1 className="text-center page-title">Mes projets</h1>
+        <GridProject projects={data.allMarkdownRemark.edges} />
+      </Container>
     </Layout>
   )
 }

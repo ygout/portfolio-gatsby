@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Container,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -8,6 +7,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -29,27 +29,34 @@ export default class Header extends React.Component {
         <Navbar dark className="fixed-top navbar-custom" expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Container>
-              <Nav className="mr-auto" navbar>
-                <NavItem>
-                  <NavLink href="/">Accueil</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/projects/">Projets</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/resume">CV</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/contact">Contact</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink target="_blank" href="https://github.com/ygout" >
-                    GitHub
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Container>
+            <Nav className="mx-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Accueil</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/projects/">Projets</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/resume">CV</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/contact">Contact</NavLink>
+              </NavItem>
+
+            </Nav>
+            <Nav className="mx-auto" navbar>
+              <NavItem>
+                <NavLink rel="noopener noreferrer" target="_blank" href="https://github.com/ygout" >
+                  <FaGithub size="1.5em"></FaGithub>
+                </NavLink>
+              </NavItem>
+              <NavItem >
+                <NavLink rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/yohann-goutaret-5150a9149/" >
+                  <FaLinkedin size="1.5em"></FaLinkedin>
+                </NavLink>
+              </NavItem>
+            </Nav>
+
           </Collapse>
         </Navbar>
       </>

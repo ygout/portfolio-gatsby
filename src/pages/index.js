@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 import avatar from '../images/avatar-circle-B.png' // Tell Webpack this JS file uses this image
 
 const IndexPage = () => (
@@ -17,7 +17,7 @@ const IndexPage = () => (
       ]}
     />
     <section className="text-center mt-5">
-      <img className="img-fluid mb-5 d-block mx-auto image-profile" src={avatar} />
+      <img alt="avatar" className="img-fluid mb-5 d-block mx-auto image-profile" src={avatar} />
       <h1 className="mb-0">Yohann Goutaret</h1>
       <hr className= "star-light"></hr>
       <h2 className="font-weight-light mb-0">Développeur FullStack - Back-end</h2>

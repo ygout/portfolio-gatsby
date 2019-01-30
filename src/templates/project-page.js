@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import CarouselProject from '../components/Carousel/CarouselProject'
+import { Container } from 'reactstrap'
 
 export const ProjectPageTemplate = ({
   title,
@@ -11,33 +12,35 @@ export const ProjectPageTemplate = ({
   gallery,
   results,
 }) => {
-  return(
+  return (
     <>
- 
+      <Container>
         <CarouselProject className="mt-5" items={gallery}>
         </CarouselProject>
 
-      <div className="row mt-3">
-        <div>
-          <h3>Description</h3>
-          <p>{description}</p>
+        <div className="row mt-3">
+          <div>
+            <h3>Description</h3>
+            <p>{description}</p>
+          </div>
         </div>
-      </div>
-      <div className="row">
-        <div>
-          <h3>Projet details</h3>
-          <ul>
-            <li>{tools}</li>
-            <li>{langages}</li>
-          </ul>
+        <div className="row">
+          <div>
+            <h3>Projet details</h3>
+            <ul>
+              <li>{tools}</li>
+              <li>{langages}</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div className="row">
-        <div>
-          <h3>Bilan</h3>
-          <p>{results} </p>
+        <div className="row">
+          <div>
+            <h3>Bilan</h3>
+            <p>{results} </p>
+          </div>
         </div>
-      </div>
+      </Container>
+
     </>
   )
 }

@@ -4,7 +4,6 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
 } from 'reactstrap'
 
 class CarouselProject extends Component {
@@ -67,7 +66,7 @@ class CarouselProject extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} />
+          <img alt={item.src} src={item.src} />
         </CarouselItem>
       )
     })

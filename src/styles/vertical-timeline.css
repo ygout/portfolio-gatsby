@@ -19,7 +19,7 @@
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #fff
+    background: #F5F5F5
 }
 
 @media only screen and (min-width:1170px) {
@@ -172,7 +172,7 @@
 .vertical-timeline-element-content {
     position: relative;
     margin-left: 60px;
-    background: #fff;
+    background: #F5F5F5;
     border-radius: .25em;
     padding: 1em;
     box-shadow: 0 3px 0 #ddd
@@ -264,7 +264,7 @@
         top: 24px;
         left: 100%;
         border-color: transparent;
-        border-left-color: #fff
+        border-left-color: #F5F5F5
     }
     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
         position: absolute;
@@ -284,12 +284,12 @@
         left: auto;
         right: 100%;
         border-color: transparent;
-        border-right-color: #fff
+        border-right-color: #F5F5F5
     }
     .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date,
     .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
         left: auto;
-        right: 124%;
+        right: 150%;
         text-align: right
     }
 }
