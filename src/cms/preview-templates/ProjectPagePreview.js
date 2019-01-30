@@ -7,7 +7,6 @@ const ProjectPagePreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     tools={entry.getIn(['data', 'outils'])}
     langages={entry.getIn(['data', 'langages'])}
-    gallery=""
     results={entry.getIn(['data', 'results'])}
     thumbnail={entry.getIn(['data', 'thumbnail'])}
   />

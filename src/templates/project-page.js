@@ -15,8 +15,8 @@ export const ProjectPageTemplate = ({
   return (
     <>
       <Container>
-        <CarouselProject className="mt-5" items={gallery}>
-        </CarouselProject>
+        {/* <CarouselProject className="mt-5" items={gallery}>
+        </CarouselProject> */}
 
         <div className="row mt-3">
           <div>
@@ -47,7 +47,7 @@ export const ProjectPageTemplate = ({
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log('gallery', frontmatter.gallery);
   return (
     <Layout>
       <ProjectPageTemplate
