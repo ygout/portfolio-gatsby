@@ -12,12 +12,12 @@ export const ProjectPageTemplate = ({
   gallery,
   results,
 }) => {
-
+  console.log('gallery', gallery)
   return (
     <>
       <Container>
         {/* {gallery ? <CarouselProject className="mt-5" items={gallery} /> : null} */}
-
+      
         <div className="row mt-3">
           <div>
             <h3>Description</h3>
