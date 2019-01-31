@@ -63,19 +63,19 @@ const ProjectPage = ({ data }) => {
 
 export default ProjectPage
 
-export const projectPageQuery = graphql`
-  query ProjectPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        title
-        thumbnail
-        outils
-        description
-        results
-        category
-        langages
-        gallery
-      }
-    }
-  }
-`
+// export const projectPageQuery = graphql`
+//   query ProjectPage($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       frontmatter {
+//         title
+//         thumbnail
+//         outils
+//         description
+//         results
+//         category
+//         langages
+//         gallery
+//       }
+//     }
+//   }
+// `

@@ -7,7 +7,7 @@ gallery:
 description: Stage
 outils: 'NetBeans, Windows 7, NotePads, Bonita'
 langages: 'PHP, CSS, Groovy, HTML5, SQLite'
-results: ezaeaz
+results: ''
 category: WEB
 ---
 

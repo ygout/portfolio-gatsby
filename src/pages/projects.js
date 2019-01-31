@@ -22,7 +22,7 @@ const ProjectsPage = ({ data }) => {
       />
       <Container className="mt-5">
         <h1 className="text-center page-title">Mes projets</h1>
-        <GridProject projects={data.allMarkdownRemark.edges} />
+        {data ? <GridProject projects={data.allMarkdownRemark.edges} /> : null}
       </Container>
     </Layout>
   )

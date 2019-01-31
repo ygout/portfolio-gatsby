@@ -4,8 +4,6 @@ backend:
   repo: ygout/portfolio-gatsby # Path to your GitHub repository
 media_folder: 'static/images'
 public_folder: '/images'
-editor:
-  preview: false
 collections:
   - name: 'projects'
     label: 'Projects'
@@ -19,6 +17,7 @@ collections:
           label: 'Thumbnail',
           widget: 'image',
           required: false,
+          default: null,
         }
       - {
           name: 'gallery',
@@ -26,12 +25,14 @@ collections:
           widget: 'list',
           field: { label: Image, name: image, widget: image },
           required: false,
+          default: [null]
         }
       - {
           name: 'description',
           label: 'Description',
           widget: 'markdown',
           required: false,
+          default: null,
         }
       - { name: 'outils', label: 'Tools', widget: 'markdown', required: false }
       - {
@@ -39,12 +40,14 @@ collections:
           label: 'Langages',
           widget: 'markdown',
           required: false,
+          default: null,
         }
       - {
           name: 'results',
           label: 'Results',
           widget: 'markdown',
           required: false,
+          default: null,
         }
       - {
           name: 'category',
@@ -58,20 +61,21 @@ collections:
               { label: 'Mobile', value: 'MOBILE' },
             ],
           required: true,
+          default: null,
         }
-  - name: 'moncv'
-    label: 'Monmoncv'
-    folder: 'src'
-    create: true
-    extension: 'json'
-    fields:
-      - {
-          name: 'skills',
-          label: 'Skills',
-          widget: 'list',
-          fields:
-            [
-              { label: 'Test', name: 'test', widget: 'string' },
-              { label: 'Percent', name: 'percent', widget: 'number' },
-            ],
-        }
+  # - name: 'moncv'
+  #   label: 'Monmoncv'
+  #   folder: 'src'
+  #   create: true
+  #   extension: 'json'
+  #   fields:
+  #     - {
+  #         name: 'skills',
+  #         label: 'Skills',
+  #         widget: 'list',
+  #         fields:
+  #           [
+  #             { label: 'Test', name: 'test', widget: 'string' },
+  #             { label: 'Percent', name: 'percent', widget: 'number' },
+  #           ],
+  #       }
