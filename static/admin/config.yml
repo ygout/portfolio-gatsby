@@ -71,7 +71,7 @@ collections:
           widget: 'list',
           fields:
             [
-              { label: 'Name', name: 'name', widget: 'string' },
+              { label: 'Test', name: 'test', widget: 'string' },
               { label: 'Percent', name: 'percent', widget: 'number' },
             ],
         }
