@@ -70,6 +70,8 @@ collections:
           label: 'skills',
           widget: 'list',
           fields:
-            - { label: "Name", name: "name", widget: "string" }
-            - { label: "Percent", name: "percent", widget: "number" }
+            [
+              { label: 'Name', name: 'name', widget: 'string' },
+              { label: 'Percent', name: 'percent', widget: 'number' },
+            ],
         }
