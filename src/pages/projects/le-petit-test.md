@@ -1,11 +1,12 @@
 ---
 title: le petit test
-thumbnail: 'eze'
+thumbnail: '/test.jpg'
 gallery:
   - {}
 description: ''
 langages: ''
 results: ''
 category: WEB
+tools: ''
 ---
 

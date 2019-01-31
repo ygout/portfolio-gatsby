@@ -16,7 +16,6 @@ collections:
           name: 'thumbnail',
           label: 'Thumbnail',
           widget: 'image',
-          required: required,
         }
       - {
           name: 'gallery',
@@ -33,7 +32,13 @@ collections:
           required: false,
           default: '',
         }
-      - { name: 'outils', label: 'Tools', widget: 'markdown', required: false }
+      - {
+          name: 'tools',
+          label: 'Tools',
+          widget: 'string',
+          required: false,
+          default: '',
+        }
       - {
           name: 'langages',
           label: 'Langages',
@@ -47,6 +52,19 @@ collections:
           widget: 'markdown',
           required: false,
           default: '',
+        }
+      - {
+          name: 'src_file',
+          label: 'Source file',
+          widget: 'file',
+          required: false,
+          allow_multiple: true,
+        }
+        - {
+          name: 'src_link',
+          label: 'Source file',
+          widget: 'string',
+          required: false,
         }
       - {
           name: 'category',
