@@ -5,7 +5,9 @@
  */
 
 // You can delete this file if you're not using it
-const path = require("path")
+const path = require('path')
+const remark = require('remark')
+const remarkHTML = require('remark-html')
 // const remark = require('remark');
 // const remarkHTML = require('remark-html');
 
@@ -15,19 +17,19 @@ exports.createPages = ({ actions, graphql }) => {
   const projectTemplate = path.resolve(`src/templates/project-page.js`)
 
   return graphql(`
-  {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          html
-          fields {
-            slug
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            html
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  }
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))
@@ -35,7 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      const id = node.id;
+      const id = node.id
       createPage({
         path: node.fields.slug,
         component: projectTemplate,
@@ -46,13 +48,19 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
+  if ('frontmatter' in node) {
+    const markdown = node.frontmatter.description
+    const markdownHtml = remark()
+      .use(remarkHTML)
+      .processSync(markdown)
+      .toString()
 
-// exports.onCreateNode = ({ node }) => {
-//   // Conditionals, etc. can be used here, but I omitted those just for example's sake.
-//   const markdown = node.frontmatter.description;
-//   node.frontmatter.description = remark()
-//     .use(remarkHTML)
-//     .processSync(markdown)
-//     .toString();
-//   return node;
-// };
+    createNodeField({
+      node,
+      name: `descriptionHtml`,
+      value: markdownHtml,
+    })
+  }
+}

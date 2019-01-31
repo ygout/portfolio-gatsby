@@ -12,7 +12,7 @@ export const ProjectPageTemplate = ({
   gallery,
   results,
 }) => {
-  console.log('gallery', gallery)
+  console.log('description', description)
   return (
     <>
       <Container>
@@ -21,7 +21,7 @@ export const ProjectPageTemplate = ({
         <div className="row mt-3">
           <div>
             <h3>Description</h3>
-            <div dangerouslySetInnerHTML={{ __html: description }} />
+            <div id="___gatsby" dangerouslySetInnerHTML={{ __html: description }} />
           </div>
         </div>
         <div className="row">
@@ -46,12 +46,12 @@ export const ProjectPageTemplate = ({
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log('data.markdownRemark', data.markdownRemark);
+  console.log('data.markdownRemark', data.markdownRemark.fields.descriptionHtml);
   return (
     <Layout>
       <ProjectPageTemplate
         title={frontmatter.title}
-        description={frontmatter.description}
+        description={data.markdownRemark.fields.descriptionHtml}
         tools={frontmatter.tools}
         langages={frontmatter.langages}
         gallery={frontmatter.gallery}
@@ -67,7 +67,9 @@ export default ProjectPage
 export const projectPageQuery = graphql`
   query ProjectPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
+      fields {
+        descriptionHtml
+      }
       frontmatter {
         title
         thumbnail
@@ -76,6 +78,7 @@ export const projectPageQuery = graphql`
         category
         langages
         gallery
+        description
       }
     }
   }
