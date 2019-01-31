@@ -59,15 +59,15 @@ collections:
             ],
           required: true,
         }
-  - name: 'resume'
-    label: 'Resume'
+  - name: 'moncv'
+    label: 'Monmoncv'
     folder: 'src'
     create: true
     extension: 'json'
     fields:
       - {
           name: 'skills',
-          label: 'skills',
+          label: 'Skills',
           widget: 'list',
           fields:
             [
