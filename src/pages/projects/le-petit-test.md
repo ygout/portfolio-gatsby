@@ -1,6 +1,6 @@
 ---
 title: le petit test
-thumbnail: 'eze'
+thumbnail: /images/777751.jpg
 gallery:
   - {}
 description: ''
