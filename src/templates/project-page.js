@@ -69,12 +69,11 @@ export const projectPageQuery = graphql`
       frontmatter {
         title
         thumbnail
-        outils
+        tools
         description
         results
         category
         langages
-        gallery
       }
     }
   }

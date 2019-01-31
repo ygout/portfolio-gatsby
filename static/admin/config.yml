@@ -12,18 +12,14 @@ collections:
     slug: '{{slug}}'
     fields:
       - { name: 'title', label: 'Title', required: true }
-      - {
-          name: 'thumbnail',
-          label: 'Thumbnail',
-          widget: 'image',
-        }
+      - { name: 'thumbnail', label: 'Thumbnail', widget: 'image' }
       - {
           name: 'gallery',
           label: 'Gallery',
           widget: 'list',
-          field: { label: Image, name: image, widget: image },
+          field: { label: Image, name: image, widget: image, config: {multiple: true}},
           required: false,
-          default: [null]
+          default: [null],
         }
       - {
           name: 'description',
@@ -60,7 +56,7 @@ collections:
           required: false,
           allow_multiple: true,
         }
-        - {
+      - {
           name: 'src_link',
           label: 'Source file',
           widget: 'string',
