@@ -16,8 +16,7 @@ collections:
           name: 'thumbnail',
           label: 'Thumbnail',
           widget: 'image',
-          required: false,
-          default: 'null',
+          required: required,
         }
       - {
           name: 'gallery',
