@@ -6,7 +6,7 @@ gallery:
   - /images/777751.jpg
 description: Stage
 outils: 'NetBeans, Windows 7, NotePads, Bonita'
-langages: 'PHP, CSS, Groovy, HTML5, SQLite'
+langages: ''
 results: ''
 category: WEB
 ---
