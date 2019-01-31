@@ -65,4 +65,10 @@ collections:
     create: true
     extension: 'json'
     fields:
-      - { name: 'title', label: 'Title', required: true }
+      - {
+          name: 'skills',
+          label: 'skills',
+          widget: 'list',
+          field: { label: 'skill', name: 'skill', widget: 'object', field: {name: 'title', label: 'title'} },
+          required: false,
+        }
