@@ -17,7 +17,7 @@ collections:
           label: 'Thumbnail',
           widget: 'image',
           required: false,
-          default: null,
+          default: 'null',
         }
       - {
           name: 'gallery',
@@ -32,7 +32,7 @@ collections:
           label: 'Description',
           widget: 'markdown',
           required: false,
-          default: null,
+          default: '',
         }
       - { name: 'outils', label: 'Tools', widget: 'markdown', required: false }
       - {
@@ -40,14 +40,14 @@ collections:
           label: 'Langages',
           widget: 'markdown',
           required: false,
-          default: null,
+          default: '',
         }
       - {
           name: 'results',
           label: 'Results',
           widget: 'markdown',
           required: false,
-          default: null,
+          default: '',
         }
       - {
           name: 'category',
@@ -61,7 +61,6 @@ collections:
               { label: 'Mobile', value: 'MOBILE' },
             ],
           required: true,
-          default: null,
         }
   # - name: 'moncv'
   #   label: 'Monmoncv'
