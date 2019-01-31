@@ -59,3 +59,12 @@ collections:
             ],
           required: true,
         }
+  - name: 'resume'
+    label: 'Resume'
+    folder: 'src/data/resume.json'
+    create: true
+    extension: "json"
+    fields:
+      - { name: 'skills', label: 'Skills', widget: 'list', fields: { label: Skill, name: skill, widget: object, fields: [{name: 'title', label: 'Title', widget: string}]}, required: true }
+     
+  
