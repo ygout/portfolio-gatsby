@@ -21,7 +21,7 @@ export const ProjectPageTemplate = ({
         <div className="row mt-3">
           <div>
             <h3>Description</h3>
-            <p>{description}</p>
+            <div dangerouslySetInnerHTML={{ __html: description }} />
           </div>
         </div>
         <div className="row">
@@ -46,6 +46,7 @@ export const ProjectPageTemplate = ({
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  console.log('data.markdownRemark', data.markdownRemark);
   return (
     <Layout>
       <ProjectPageTemplate
@@ -66,14 +67,15 @@ export default ProjectPage
 export const projectPageQuery = graphql`
   query ProjectPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html
       frontmatter {
         title
         thumbnail
         tools
-        description
         results
         category
         langages
+        gallery
       }
     }
   }

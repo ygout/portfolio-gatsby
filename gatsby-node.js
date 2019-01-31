@@ -6,6 +6,8 @@
 
 // You can delete this file if you're not using it
 const path = require("path")
+// const remark = require('remark');
+// const remarkHTML = require('remark-html');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -18,6 +20,7 @@ exports.createPages = ({ actions, graphql }) => {
       edges {
         node {
           id
+          html
           fields {
             slug
           }
@@ -43,3 +46,13 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 }
+
+// exports.onCreateNode = ({ node }) => {
+//   // Conditionals, etc. can be used here, but I omitted those just for example's sake.
+//   const markdown = node.frontmatter.description;
+//   node.frontmatter.description = remark()
+//     .use(remarkHTML)
+//     .processSync(markdown)
+//     .toString();
+//   return node;
+// };
