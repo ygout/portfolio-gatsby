@@ -63,13 +63,6 @@ collections:
           required: false,
         }
       - {
-          name: 'src_link',
-          label: 'Source link',
-          widget: 'list',
-          field: { label: Link, name: link, widget: 'string' },
-          required: false,
-        }
-      - {
           name: 'category',
           label: 'Category',
           widget: 'select',
