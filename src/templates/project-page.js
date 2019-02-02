@@ -17,7 +17,7 @@ export const ProjectPageTemplate = ({
   return (
     <>
       <Container>
-        {/* {gallery ? <CarouselProject className="mt-5" items={gallery} /> : null} */}
+        {gallery ? <CarouselProject className="mt-5" items={gallery} /> : null}
       
         <div className="row mt-3">
           <div>

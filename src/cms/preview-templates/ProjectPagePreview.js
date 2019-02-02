@@ -5,6 +5,7 @@ const ProjectPagePreview = ({ entry, widgetFor }) => {
 
   const entryGallery = entry.getIn(['data', entry]);
   const gallery = entryGallery ? entryGallery.toJs(): [];
+  console.log('entryGallery', entryGallery);
   console.log('gallery', gallery);
   return (
     <ProjectPageTemplate
