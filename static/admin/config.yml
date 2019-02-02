@@ -61,7 +61,6 @@ collections:
           widget: 'list',
           fields: { label: 'SrcFile', name: srcFile, widget: object, fields: [{ label: Url, name: url, widget: 'string' },{ label: Label, name: label, widget: 'string' }]},
           required: false,
-          default: [null],
         }
       - {
           name: 'src_link',
@@ -69,7 +68,6 @@ collections:
           widget: 'list',
           fields: { label: Link, name: link, widget: 'string' },
           required: false,
-          default: [null],
         }
       - {
           name: 'category',
