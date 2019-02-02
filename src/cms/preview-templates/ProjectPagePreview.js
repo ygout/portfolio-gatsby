@@ -1,17 +1,24 @@
 import React from 'react'
 import { ProjectPageTemplate } from '../../templates/project-page'
+import remark from 'remark';
+import remarkHTML from 'remark-html';
+// const remark = require('remark')
+// const remarkHTML = require('remark-html')
 
 const ProjectPagePreview = ({ entry, widgetFor }) => {
 
   const entryGallery = entry.getIn(['data', 'gallery']);
   const gallery = entryGallery ? entryGallery.toJS(): [];
-  
-  console.log('entryGallery', entryGallery);
-  console.log('gallery', gallery);
+
+  const entryDescription = entry.getIn(['data', 'description']);
+  const description = remark()
+  .use(remarkHTML)
+  .processSync(entryDescription)
+  .toString()
   return (
     <ProjectPageTemplate
       title={entry.getIn(['data','title'])}
-      description={entry.getIn(['data', 'description'])}
+      description={description}
       tools={entry.getIn(['data', 'tools'])}
       langages={entry.getIn(['data', 'langages'])}
       results={entry.getIn(['data', 'results'])}
