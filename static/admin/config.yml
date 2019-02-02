@@ -55,13 +55,13 @@ collections:
           required: false,
           default: '',
         }
-      # - {
-      #     name: 'src_file',
-      #     label: 'Source file',
-      #     widget: 'list',
-      #     fields: { label: 'SrcFile', name: srcFile, widget: object, fields: [{ label: Url, name: url, widget: 'string' },{ label: Label, name: label, widget: 'string' }]},
-      #     required: false,
-      #   }
+      - {
+          name: 'src_file',
+          label: 'Source file',
+          widget: 'list',
+          field: { label: 'SrcFile', name: srcFile, widget: object, fields: [{ label: Url, name: url, widget: 'string' },{ label: Label, name: label, widget: 'string' }]},
+          required: false,
+        }
       - {
           name: 'src_link',
           label: 'Source link',
