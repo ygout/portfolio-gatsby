@@ -4,7 +4,8 @@ import { ProjectPageTemplate } from '../../templates/project-page'
 const ProjectPagePreview = ({ entry, widgetFor }) => {
 
   const entryGallery = entry.getIn(['data', 'gallery']);
-  const gallery = entryGallery ? entryGallery.toJs(): [];
+  const gallery = entryGallery ? entryGallery.toJS(): [];
+  
   console.log('entryGallery', entryGallery);
   console.log('gallery', gallery);
   return (
