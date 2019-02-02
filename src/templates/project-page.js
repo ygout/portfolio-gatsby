@@ -12,7 +12,8 @@ export const ProjectPageTemplate = ({
   gallery,
   results,
 }) => {
-  console.log('description', description)
+  console.log('description', description);
+  console.log('la gallery', gallery);
   return (
     <>
       <Container>
