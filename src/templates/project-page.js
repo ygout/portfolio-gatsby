@@ -13,13 +13,18 @@ export const ProjectPageTemplate = ({
   results,
   srcFile
 }) => {
-
-  const linksSrc = srcLink.map(item => {
-    return (
-       <a href= {item.url} > {item.label}</a>
-    )
-  });
-  const linksFile = srcFile;
+  let linksFile;
+   if (typeof srcFile !=='undefined'){
+      linksFile = srcFile.map(item => {
+      return (
+          <a href= {item.url} > {item.label}</a>
+      )
+    });
+   } else {
+    const linksFile = <p></p>
+  
+   }
+  
   return (
     <>
       <Container>
@@ -50,7 +55,7 @@ export const ProjectPageTemplate = ({
           <div>
 
             <h3 className="mb-4">Sources</h3>
-            {linksSrc}
+            {linksFile}
           </div>
         </div>
       </Container>
