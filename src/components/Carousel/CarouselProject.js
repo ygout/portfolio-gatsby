@@ -23,6 +23,8 @@ class CarouselProject extends Component {
         }
       })
       this.items = this.props.items
+    } else {
+      this.items = [];
     }
   }
   onExiting() {
