@@ -11,32 +11,48 @@ export const ProjectPageTemplate = ({
   langages,
   gallery,
   results,
+  srcFile,
+  srcLink
 }) => {
-
+  // const linksSrc = srcLink.map(item => {
+  //   return (
+  //     null;
+  //   )
+  // });
+  const linksFile = srcFile;
   return (
     <>
       <Container>
         {gallery ? <CarouselProject className="mt-5" items={gallery} /> : null}
-      
-        <div className="row mt-3">
+        <h1 className="text-center mt-5 mb-5">{title}</h1>
+        <div className="row mt-3 mb-5">
           <div>
-            <h3>Description</h3>
+            <h3 className="mb-4">Description</h3>
             <div id="___gatsby" dangerouslySetInnerHTML={{ __html: description }} />
           </div>
         </div>
-        <div className="row">
+        <div className="row  mb-5">
           <div>
-            <h3>Projet details</h3>
+            <h3 className="mb-4">Projet details</h3>
             <ul>
               <li>{tools}</li>
               <li>{langages}</li>
             </ul>
           </div>
         </div>
-        <div className="row">
+        <div className="row  mb-5">
           <div>
-            <h3>Bilan</h3>
+            <h3 className="mb-4">Bilan</h3>
             <p>{results} </p>
+          </div>
+        </div>
+        <div className="row  mb-5">
+          <div>
+
+            <h3 className="mb-4">Sources</h3>
+            <p>{srcLink} </p>
+            <br></br>
+            <a href= {{srcFile}} download>Click to download</a>
           </div>
         </div>
       </Container>

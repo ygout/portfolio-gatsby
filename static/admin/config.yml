@@ -17,7 +17,13 @@ collections:
           name: 'gallery',
           label: 'Gallery',
           widget: 'list',
-          field: { label: Image, name: image, widget: image, config: {multiple: true}},
+          field:
+            {
+              label: Image,
+              name: image,
+              widget: image,
+              config: { multiple: true },
+            },
           required: false,
           default: [null],
         }
@@ -52,15 +58,18 @@ collections:
       - {
           name: 'src_file',
           label: 'Source file',
-          widget: 'file',
+          widget: 'list',
+          fields: { label: 'SrcFile', name: srcFile, widget: object, fields: fields: [{ label: Url, name: url, widget: 'string' },{ label: Label, name: label, widget: 'string' }]},
           required: false,
-          allow_multiple: true,
+          default: [null],
         }
       - {
           name: 'src_link',
-          label: 'Source file',
-          widget: 'string',
+          label: 'Source link',
+          widget: 'list',
+          fields: { label: Link, name: link, widget: 'string' },
           required: false,
+          default: [null],
         }
       - {
           name: 'category',
