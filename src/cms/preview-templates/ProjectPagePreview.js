@@ -11,7 +11,7 @@ const ProjectPagePreview = ({ entry, widgetFor }) => {
 
   const entryLinkFile = entry.getIn(['data', 'src_file']);
   const linksFile = entryLinkFile ? entryLinkFile.toJS(): [];
-  console.log('linksFile', linksFile);
+
   const entryDescription = entry.getIn(['data', 'description']);
   const description = remark()
   .use(remarkHTML)

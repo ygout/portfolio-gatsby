@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import CarouselProject from '../components/Carousel/CarouselProject'
 import { Container } from 'reactstrap'
+const isEmpty = require('lodash.isempty')
 
 export const ProjectPageTemplate = ({
   title,
@@ -16,10 +17,25 @@ export const ProjectPageTemplate = ({
   let linksFile
   if (typeof srcFile !== 'undefined' && srcFile.length > 0) {
     linksFile = srcFile.map(item => {
-      return <a rel="noopener noreferrer" target="_blank" key={item.srcFile.url} href={item.srcFile.url}> {item.srcFile.label}</a>
+      if (!isEmpty(item)) {
+        return (
+          <>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              key={item.srcFile.url}
+              href={item.srcFile.url}
+            >
+              {' '}
+              {item.srcFile.label}
+            </a>
+            <br />
+          </>
+        )
+      }
     })
   } else {
-    const linksFile = <p />
+    linksFile = <p />
   }
 
   return (
