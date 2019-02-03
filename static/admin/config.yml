@@ -66,8 +66,8 @@ collections:
               widget: object,
               fields: 
                 [
-                  { label: Url, name: url, widget: 'string' },
-                  { label: Label, name: label, widget: 'string' }
+                  { label: Url, name: url, widget: 'string', default: '' },
+                  { label: Label, name: label, widget: 'string', default: '' }
                 ]
             },
           required: false,

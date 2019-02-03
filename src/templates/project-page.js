@@ -14,7 +14,8 @@ export const ProjectPageTemplate = ({
   srcFile
 }) => {
   let linksFile;
-   if (typeof srcFile !=='undefined'){
+  console.log('srcFile', srcFile);
+   if (typeof srcFile !=='undefined' && srcFile.length > 0){
       linksFile = srcFile.map(item => {
       return (
           <a href= {item.url} > {item.label}</a>
