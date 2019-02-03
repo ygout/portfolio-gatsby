@@ -7,6 +7,7 @@ media_library:
   name: uploadcare
   config:
     publicKey: '9c619a8e92ff62f813d3'
+    multiple: true
 public_folder: '/images'
 collections:
   - name: 'projects'
