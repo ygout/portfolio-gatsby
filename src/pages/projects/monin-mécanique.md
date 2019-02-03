@@ -4,6 +4,8 @@ thumbnail: /images/photo-1-1-.png
 gallery:
   - /images/photo-1.png
   - /images/photo-2-1-.png
+  - /images/photo-2.png
+  - /images/photo-4.png
 description: >-
   **Contexte: ** Linkimedia est une agence web/référencement situé sur région
   Rhône alpes / Isère qui développe et référence des sites web de différentes
