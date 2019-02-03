@@ -15,16 +15,16 @@ export const ProjectPageTemplate = ({
 }) => {
   let linksFile;
   console.log('srcFile', srcFile);
-   if (typeof srcFile !=='undefined' && srcFile.length > 0){
-      linksFile = srcFile.map(item => {
-      return (
-          <a href= {item.url} > {item.label}</a>
-      )
-    });
-   } else {
-    const linksFile = <p></p>
+  //  if (typeof srcFile !=='undefined' && srcFile.length > 0){
+  //     linksFile = srcFile.map(item => {
+  //     return (
+  //         <a href= {item.url} > {item.label}</a>
+  //     )
+  //   });
+  //  } else {
+  //   const linksFile = <p></p>
   
-   }
+  //  }
   
   return (
     <>
@@ -56,7 +56,7 @@ export const ProjectPageTemplate = ({
           <div>
 
             <h3 className="mb-4">Sources</h3>
-            {linksFile}
+            {/* {linksFile} */}
           </div>
         </div>
       </Container>
