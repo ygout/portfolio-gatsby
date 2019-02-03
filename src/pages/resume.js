@@ -222,7 +222,7 @@ const ResumePage = () => (
               <tr>
                 <td rowSpan="3">Septembre 2015 - Novembre 2017</td>
                 <td>
-                  Titre Développeur FUllStack (bac+4) - IT AKADEMY
+                  Titre Développeur FullStack (bac+4) - IT AKADEMY
               </td>
               </tr>
               <tr>
