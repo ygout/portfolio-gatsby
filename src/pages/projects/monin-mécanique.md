@@ -24,9 +24,7 @@ description: >-
 tools: ''
 langages: ''
 results: ''
-src_file:
-  - label: z
-  - null
+src_file: []
 category: WEB
 ---
 
