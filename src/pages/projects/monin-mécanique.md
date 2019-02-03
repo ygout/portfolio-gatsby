@@ -35,7 +35,10 @@ results: >-
   La modification de ce site m'a permis de me confronter aux difficultés de
   reprendre le code d'un autre développeur, mais aussi de trouver des solutions
   en autonomie.
-src_file: []
+src_file:
+  - srcFile:
+      label: Monin mécanique site web
+      url: 'https://www.monin-mecanique.com/'
 category: WEB
 ---
 
