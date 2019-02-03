@@ -3,6 +3,10 @@ backend:
   name: github
   repo: ygout/portfolio-gatsby # Path to your GitHub repository
 media_folder: 'static/images'
+media_library:
+  name: uploadcare
+  config:
+    multiple: true
 public_folder: '/images'
 collections:
   - name: 'projects'
@@ -59,18 +63,23 @@ collections:
           name: 'src_file',
           label: 'Source file',
           widget: 'list',
-          fields: 
+          fields:
             [
-              { 
+              {
                 label: 'SrcFile',
                 name: srcFile,
                 widget: object,
-                fields: 
+                fields:
                   [
                     { label: Url, name: url, widget: 'string', default: '' },
-                    { label: Label, name: label, widget: 'string', default: '' }
-                  ]
-              }
+                    {
+                      label: Label,
+                      name: label,
+                      widget: 'string',
+                      default: '',
+                    },
+                  ],
+              },
             ],
           required: false,
           default: [null],

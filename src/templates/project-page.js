@@ -32,6 +32,8 @@ export const ProjectPageTemplate = ({
             <br />
           </>
         )
+      }else {
+        return (<> </>);
       }
     })
   } else {
