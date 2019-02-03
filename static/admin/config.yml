@@ -59,17 +59,19 @@ collections:
           name: 'src_file',
           label: 'Source file',
           widget: 'list',
-          field: 
-            { 
-              label: 'SrcFile',
-              name: srcFile,
-              widget: object,
-              field: 
-                [
-                  { label: Url, name: url, widget: 'string', default: '' },
-                  { label: Label, name: label, widget: 'string', default: '' }
-                ]
-            },
+          fields: 
+            [
+              { 
+                label: 'SrcFile',
+                name: srcFile,
+                widget: object,
+                fields: 
+                  [
+                    { label: Url, name: url, widget: 'string', default: '' },
+                    { label: Label, name: label, widget: 'string', default: '' }
+                  ]
+              }
+            ],
           required: false,
           default: [null],
         }
