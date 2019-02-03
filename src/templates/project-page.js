@@ -11,21 +11,17 @@ export const ProjectPageTemplate = ({
   langages,
   gallery,
   results,
-  srcFile
+  srcFile,
 }) => {
-  let linksFile;
-  console.log('srcFile', srcFile);
-  //  if (typeof srcFile !=='undefined' && srcFile.length > 0){
-  //     linksFile = srcFile.map(item => {
-  //     return (
-  //         <a href= {item.url} > {item.label}</a>
-  //     )
-  //   });
-  //  } else {
-  //   const linksFile = <p></p>
-  
-  //  }
-  
+  let linksFile
+  if (typeof srcFile !== 'undefined' && srcFile.length > 0) {
+    linksFile = srcFile.map(item => {
+      return <a rel="noopener noreferrer" target="_blank" key={item.srcFile.url} href={item.srcFile.url}> {item.srcFile.label}</a>
+    })
+  } else {
+    const linksFile = <p />
+  }
+
   return (
     <>
       <Container>
@@ -34,7 +30,10 @@ export const ProjectPageTemplate = ({
         <div className="row mt-3 mb-5">
           <div>
             <h3 className="mb-4">Description</h3>
-            <div id="___gatsby" dangerouslySetInnerHTML={{ __html: description }} />
+            <div
+              id="___gatsby"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </div>
         </div>
         <div className="row  mb-5">
@@ -54,9 +53,8 @@ export const ProjectPageTemplate = ({
         </div>
         <div className="row  mb-5">
           <div>
-
             <h3 className="mb-4">Sources</h3>
-            {/* {linksFile} */}
+            {linksFile}
           </div>
         </div>
       </Container>
@@ -66,7 +64,7 @@ export const ProjectPageTemplate = ({
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log('data.markdownRemark', data.markdownRemark.fields.descriptionHtml);
+  console.log('data.markdownRemark', data.markdownRemark.fields.descriptionHtml)
   return (
     <Layout>
       <ProjectPageTemplate
@@ -77,6 +75,7 @@ const ProjectPage = ({ data }) => {
         gallery={frontmatter.gallery}
         results={frontmatter.results}
         thumbnail={frontmatter.thumbnail}
+        srcFile={frontmatter.src_file}
       />
     </Layout>
   )
@@ -99,6 +98,12 @@ export const projectPageQuery = graphql`
         langages
         gallery
         description
+        src_file {
+          srcFile {
+            url
+            label
+          }
+        }
       }
     }
   }

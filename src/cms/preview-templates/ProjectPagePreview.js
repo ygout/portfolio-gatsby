@@ -10,8 +10,8 @@ const ProjectPagePreview = ({ entry, widgetFor }) => {
   const gallery = entryGallery ? entryGallery.toJS(): [];
 
   const entryLinkFile = entry.getIn(['data', 'src_file']);
-  const linkFile = entryLinkFile ? entryLinkFile.toJS(): [];
-
+  const linksFile = entryLinkFile ? entryLinkFile.toJS(): [];
+  console.log('linksFile', linksFile);
   const entryDescription = entry.getIn(['data', 'description']);
   const description = remark()
   .use(remarkHTML)
@@ -27,7 +27,7 @@ const ProjectPagePreview = ({ entry, widgetFor }) => {
       results={entry.getIn(['data', 'results'])}
       gallery={gallery}
       thumbnail={entry.getIn(['data', 'thumbnail'])}
-      srcFile={linkFile}
+      srcFile={linksFile}
     />
   )
 }
