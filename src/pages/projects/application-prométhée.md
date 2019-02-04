@@ -1,6 +1,7 @@
 ---
 title: Application Prométhée
-thumbnail: /images/logo-lyon2.jpg
+thumbnail:
+  - 'https://ucarecdn.com/556301a1-2843-400a-a60e-0d90446e0569~1/nth/0/'
 gallery:
   - /images/15e9d2_1d96683664644d09900b34e606b873c2.png
   - /images/15e9d2_2a57f997b2b84b9e84b4d4a7c6f37a2c.png
