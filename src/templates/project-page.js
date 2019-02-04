@@ -15,7 +15,7 @@ export const ProjectPageTemplate = ({
   srcFile,
 }) => {
   let linksFile
-  if (typeof srcFile !== 'undefined' && srcFile.length > 0) {
+  if (typeof srcFile !== 'undefined' && !isEmpty(srcFile) && srcFile.length > 0 ) {
     linksFile = srcFile.map(item => {
       if (!isEmpty(item)) {
         return (
