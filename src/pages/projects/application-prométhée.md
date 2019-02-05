@@ -1,6 +1,6 @@
 ---
 title: Application Prométhée
-thumbnail: 'https://ucarecdn.com/aa1796ac-c846-4e70-9a28-684687359544/'
+thumbnail: 'https://res.cloudinary.com/ygout/image/upload/v1549356575/sample.jpg'
 gallery:
   - /images/15e9d2_1d96683664644d09900b34e606b873c2.png
   - /images/15e9d2_2a57f997b2b84b9e84b4d4a7c6f37a2c.png
