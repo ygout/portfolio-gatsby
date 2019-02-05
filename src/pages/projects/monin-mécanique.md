@@ -1,11 +1,16 @@
 ---
 title: Monin Mécanique
-thumbnail: /images/photo-1-1-.png
+thumbnail: >-
+  https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/photo-1-1-.png
 gallery:
-  - /images/photo-1.png
-  - /images/photo-2-1-.png
-  - /images/photo-2.png
-  - /images/photo-4.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1549357495/portfolio/photo-2-1-.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1549357495/portfolio/photo-1.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1549357495/portfolio/photo-4.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1549357495/portfolio/photo-2.png
 description: >-
   **Contexte: ** Linkimedia est une agence web/référencement situé sur région
   Rhône alpes / Isère qui développe et référence des sites web de différentes
