@@ -4,6 +4,11 @@ backend:
   repo: ygout/portfolio-gatsby # Path to your GitHub repository
 media_folder: 'static/images'
 public_folder: '/images'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: ygout
+    api_key: '919667545191316'
 collections:
   - name: 'projects'
     label: 'Projects'
@@ -22,7 +27,7 @@ collections:
               label: Image,
               name: image,
               widget: image,
-              config: { multiple: true },
+              media_library: { multiple: true },
             },
           required: false,
           default: [null],

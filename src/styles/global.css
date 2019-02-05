@@ -25,7 +25,7 @@ hr.star-dark {
   margin-right: auto;
 }
 
-.carousel-control-prev,.carousel-control-next {
+/* .carousel-control-prev,.carousel-control-next {
     cursor:pointer;
   }
 
@@ -36,7 +36,7 @@ hr.star-dark {
   .carousel-inner > .carousel-item > img {
     height:300px;
     width: auto;
-  }
+  } */
 
   .important {
     font-weight: bold;
@@ -48,7 +48,7 @@ hr.star-dark {
   background-color: #2c3e50;
 }
 
-.carousel-control-prev-icon {
+/* .carousel-control-prev-icon {
   background-color: #2c3e50;
 }
 
@@ -58,4 +58,4 @@ hr.star-dark {
 
 .carousel-indicators li {
   background-color: #2c3e50;
-}
+} */
