@@ -18,34 +18,42 @@ class LightboxProject extends Component {
   }
   openLightbox(index, event) {
     event.preventDefault()
-    this.setState({
-      currentImage: index,
-      lightboxIsOpen: true,
-    })
+    this.props.lightboxIsOpen = true;
+    this.props.currentImage = index;
+
+    // this.setState({
+    //   currentImage: index,
+    //   lightboxIsOpen: true,
+    // })
   }
   closeLightbox() {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false,
-    })
+    this.props.lightboxIsOpen = false;
+    this.props.currentImage = 0;
+    // this.setState({
+    //   currentImage: 0,
+    //   lightboxIsOpen: false,
+    // })
   }
   gotoPrevious() {
-    this.setState({
-      currentImage: this.state.currentImage - 1,
-    })
+    this.props.currentImage = this.props.currentImage - 1;
+    // this.setState({
+    //   currentImage: this.state.currentImage - 1,
+    // })
   }
   gotoNext() {
-    this.setState({
-      currentImage: this.state.currentImage + 1,
-    })
+    this.props.currentImage = this.props.currentImage + 1;
+    // this.setState({
+    //   currentImage: this.state.currentImage + 1,
+    // })
   }
   gotoImage(index) {
-    this.setState({
-      currentImage: index,
-    })
+    this.props.currentImage = index;
+    // this.setState({
+    //   currentImage: index,
+    // })
   }
   handleClickImage() {
-    if (this.state.currentImage === this.items.length - 1) return
+    if (this.props.currentImage === this.items.length - 1) return
 
     this.gotoNext()
   }

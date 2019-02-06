@@ -15,37 +15,45 @@ class CarouselProject extends Component {
     } else {
       this.items = []
     }
+    this.state = {
+      lightboxIsOpen: false,
+      lightboxIndex: 0
+    }
   }
-
+  handleOnclickImg(index){
+    console.log('index',index)
+    this.setState({
+      lightboxIsOpen: true,
+      lightboxIndex: index
+    });
+  }
   render() {
     const settings = {
-      dots: true,
+      className: 'center',
+      centerMode: true,
       infinite: true,
+      centerPadding: '60px',
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 3,
     }
 
     const slides = this.items.map((item, i) => {
       return (
-        <div>
-          <a
-            href={item.src}
-            key={i}
-            // onClick={e => this.openLightbox(i, e)}
-          >
-            <img src={item.src}/>
-          </a>
+        <div style={{ height: '50px' }} key={i}>
+            <img onClick= {() => this.handleOnclickImg(i)} style= {{cursor: 'pointer'}} src={item.src} />
         </div>
       )
     })
-
+    {
+    }
     return (
       <>
-        <div>
-          <Slider {...settings}>{slides}</Slider>
+        <div className="mt-5">
+          <div>
+            <Slider {...settings}>{slides}</Slider>
+          </div>
         </div>
-        <LightboxProject items={this.items} />
+        <LightboxProject lightboxIsOpen={this.state.lightboxIsOpen} currentImage={this.state.lightboxIndex} items={this.items} />
       </>
     )
   }
