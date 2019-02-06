@@ -15,7 +15,11 @@ export const ProjectPageTemplate = ({
   srcFile,
 }) => {
   let linksFile
-  if (typeof srcFile !== 'undefined' && !isEmpty(srcFile) && srcFile.length > 0 ) {
+  if (
+    typeof srcFile !== 'undefined' &&
+    !isEmpty(srcFile) &&
+    srcFile.length > 0
+  ) {
     linksFile = srcFile.map(item => {
       if (!isEmpty(item)) {
         return (
@@ -32,8 +36,8 @@ export const ProjectPageTemplate = ({
             <br />
           </>
         )
-      }else {
-        return (<> </>);
+      } else {
+        return <> </>
       }
     })
   } else {
@@ -47,20 +51,21 @@ export const ProjectPageTemplate = ({
         <h1 className="text-center mt-5 mb-5">{title}</h1>
         <div className="row mt-3 mb-5">
           <div>
+            <div>
+              <h6 style={{ display: 'inline' }}>Outils: </h6>
+              <span style={{ display: 'inline' }}>{tools}</span>
+            </div>
+            <div>
+              <h6 style={{ display: 'inline' }}>Langages: </h6>
+              <span style={{ display: 'inline' }}>{langages}</span>
+            </div>
+          </div>
+          <div className= "mt-5">
             <h3 className="mb-4">Description</h3>
             <div
               id="___gatsby"
               dangerouslySetInnerHTML={{ __html: description }}
             />
-          </div>
-        </div>
-        <div className="row  mb-5">
-          <div>
-            <h3 className="mb-4">Projet details</h3>
-            <ul>
-              <li>{tools}</li>
-              <li>{langages}</li>
-            </ul>
           </div>
         </div>
         <div className="row  mb-5">
