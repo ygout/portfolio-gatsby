@@ -98,6 +98,18 @@ collections:
             ],
           required: true,
         }
+      - name: 'categories'
+        label: 'Categories about project'
+        folder: 'src/data/categories.json'
+        create: true,
+        extension: 'json'
+        fields:
+      - {
+          name: 'categories',
+          label: 'Categories',
+          widget: 'list',
+          field: { label: category, name: Category, widget: string,},
+        }
   # - name: 'moncv'
   #   label: 'Monmoncv'
   #   folder: 'src'
