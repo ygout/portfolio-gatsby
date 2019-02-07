@@ -17,15 +17,40 @@ class CarouselProject extends Component {
     }
     this.state = {
       lightboxIsOpen: false,
-      lightboxIndex: 0
+      lightboxIndex: 0,
     }
+    // Bind the this context to the handler function
+    this.closeLightBoxProject = this.closeLightBoxProject.bind(this)
+    this.handleOnclickImg = this.handleOnclickImg.bind(this)
+
+    this.gotoPreviousLightBoxProject = this.gotoPreviousLightBoxProject.bind(this)
+    this.gotoNextLightBoxProject = this.gotoNextLightBoxProject.bind(this)
   }
-  handleOnclickImg(index){
-    console.log('index',index)
+  handleOnclickImg(index) {
+    console.log('index', index)
+    console.log(this.state)
     this.setState({
       lightboxIsOpen: true,
-      lightboxIndex: index
-    });
+      lightboxIndex: index,
+    })
+  }
+  closeLightBoxProject() {
+    console.log('Close lightBox project')
+    console.log(this.state)
+    this.setState({
+      lightboxIsOpen: false,
+      lightboxIndex: 0,
+    })
+  }
+  gotoPreviousLightBoxProject() {
+    this.setState({
+      lightboxIndex: (this.state.lightboxIndex + this.items.length - 1) % this.items.length,
+    })
+  }
+  gotoNextLightBoxProject() {
+    this.setState({
+      lightboxIndex: (this.state.lightboxIndex + 1) % this.items.length,
+    })
   }
   render() {
     const settings = {
@@ -40,7 +65,11 @@ class CarouselProject extends Component {
     const slides = this.items.map((item, i) => {
       return (
         <div style={{ height: '50px' }} key={i}>
-            <img onClick= {() => this.handleOnclickImg(i)} style= {{cursor: 'pointer'}} src={item.src} />
+          <img
+            onClick={() => this.handleOnclickImg(i)}
+            style={{ cursor: 'pointer' }}
+            src={item.src}
+          />
         </div>
       )
     })
@@ -53,7 +82,14 @@ class CarouselProject extends Component {
             <Slider {...settings}>{slides}</Slider>
           </div>
         </div>
-        <LightboxProject lightboxIsOpen={this.state.lightboxIsOpen} currentImage={this.state.lightboxIndex} items={this.items} />
+        <LightboxProject
+          onClose={this.closeLightBoxProject}
+          lightboxIsOpen={this.state.lightboxIsOpen}
+          currentImage={this.state.lightboxIndex}
+          items={this.items}
+          gotoPrevious={this.gotoPreviousLightBoxProject}
+          gotoNext={this.gotoNextLightBoxProject}
+        />
       </>
     )
   }
