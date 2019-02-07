@@ -111,19 +111,3 @@ collections:
               widget: 'list',
               field: { label: category, name: Category, widget: string },
             }
-  # - name: 'moncv'
-  #   label: 'Monmoncv'
-  #   folder: 'src'
-  #   create: true
-  #   extension: 'json'
-  #   fields:
-  #     - {
-  #         name: 'skills',
-  #         label: 'Skills',
-  #         widget: 'list',
-  #         fields:
-  #           [
-  #             { label: 'Test', name: 'test', widget: 'string' },
-  #             { label: 'Percent', name: 'percent', widget: 'number' },
-  #           ],
-  #       }
