@@ -106,8 +106,8 @@ collections:
         name: categories
         fields:
           - {
-              name: 'categoriesP',
-              label: 'CategoriesP',
+              name: 'categories',
+              label: 'Categories',
               widget: 'list',
               field: { label: category, name: Category, widget: string },
             }
