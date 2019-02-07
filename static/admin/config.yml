@@ -101,7 +101,7 @@ collections:
   - name: 'fixedData'
     label: 'Fixed data'
     files:
-      - file: 'src/data/categories.md'
+      - file: 'src/data/categories.json'
         label: Categories
         name: categories
         fields:
