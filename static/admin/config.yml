@@ -95,20 +95,22 @@ collections:
           displayFields: ["label"],
           required: true,
         }
-  - name: 'fixedData'
-    label: 'Fixed data'
-    files:
-      - file: 'src/data/categories.json'
-        label: Categories
-        name: categories
-        fields:
-          - {
-              name: 'categories',
-              label: 'Categories',
-              widget: 'list',
-              fields:
-                [
-                  { label: Value, name: value, widget: string },
-                  { label: label, name: Label, widget: string },
-                ],
-            }
+  - name: 'categories'
+    label: 'Categories'
+    folder: 'src/data/categories'
+    create: true
+    fields:
+      - {
+        name: 'value',
+        label: 'Value',
+        widget: 'string',
+        required: true,
+        default: '',
+      }
+      - {
+        name: 'label',
+        label: 'Label',
+        widget: 'string',
+        required: true,
+        default: '',
+      }
