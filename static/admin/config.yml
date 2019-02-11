@@ -88,14 +88,11 @@ collections:
       - {
           name: 'category',
           label: 'Category',
-          widget: 'select',
-          default: 'WEB',
-          options:
-            [
-              { label: 'Web', value: 'WEB' },
-              { label: 'Logiciel', value: 'SOFTWARE' },
-              { label: 'Mobile', value: 'MOBILE' },
-            ],
+          widget: 'relation',
+          collection: fixedData,
+          searchFields: ["categories", "label"],
+          valueField: "name",
+          displayFields: ["label"],
           required: true,
         }
   - name: 'fixedData'
