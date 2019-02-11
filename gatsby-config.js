@@ -28,6 +28,13 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `categories`,
+        path: `${__dirname}/src/data/categories`,
+      },
+    },
     `gatsby-transformer-remark`,
     // {
     //   resolve: 'gatsby-transformer-remark',
