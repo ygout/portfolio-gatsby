@@ -88,11 +88,14 @@ collections:
       - {
           name: 'category',
           label: 'Category',
-          widget: 'relation',
-          collection: categories,
-          searchFields: ["label"],
-          valueField: "name",
-          displayFields: ["label"],
+          widget: 'select',
+          default: 'WEB',
+          options:
+            [
+              { label: 'Web', value: 'WEB' },
+              { label: 'Logiciel', value: 'SOFTWARE' },
+              { label: 'Mobile', value: 'MOBILE' },
+            ],
           required: true,
         }
   - name: 'categories'
