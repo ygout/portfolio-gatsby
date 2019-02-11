@@ -102,19 +102,16 @@ collections:
     label: 'Categories'
     folder: 'src/data/categories'
     create: true
-    identifier_field: name
     fields:
       - {
-        name: 'value',
+        name: 'valueP',
         label: 'Value',
         widget: 'string',
         required: true,
-        default: '',
       }
       - {
-        name: 'label',
+        name: 'labelP',
         label: 'Label',
         widget: 'string',
         required: true,
-        default: '',
       }
