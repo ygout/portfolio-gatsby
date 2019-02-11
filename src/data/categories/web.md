@@ -1,4 +1,0 @@
----
-value: 'WEB'
-label: 'Web'
----

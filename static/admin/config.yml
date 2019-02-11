@@ -98,20 +98,27 @@ collections:
             ],
           required: true,
         }
-  - name: 'categories'
-    label: 'Categories'
+  # - name: 'categories'
+  #   label: 'Categories'
+  #   folder: 'src/data/categories'
+  #   create: true
+  #   fields:
+  #     - {
+  #       name: 'valueP',
+  #       label: 'Value',
+  #       widget: 'string',
+  #       required: true,
+  #     }
+  #     - {
+  #       name: 'labelP',
+  #       label: 'Label',
+  #       widget: 'string',
+  #       required: true,
+  #     }
+  - label: 'Categories'
+    name: 'categories'
     folder: 'src/data/categories'
     create: true
     fields:
-      - {
-        name: 'valueP',
-        label: 'Value',
-        widget: 'string',
-        required: true,
-      }
-      - {
-        name: 'labelP',
-        label: 'Label',
-        widget: 'string',
-        required: true,
-      }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Value', name: 'value', widget: 'string' }
