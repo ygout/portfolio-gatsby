@@ -2,11 +2,12 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 import GridProject from '../components/GridProject'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Container } from 'reactstrap'
-import TagsProject from '../components/TagsProject'
+
 
 const ProjectsPage = ({ data }) => {
+
   return (
     <Layout>
       <SEO
@@ -22,28 +23,6 @@ const ProjectsPage = ({ data }) => {
       />
       <Container className="mt-5">
         <h1 className="text-center page-title">Mes projets</h1>
-        <StaticQuery
-          query={graphql`
-            query {
-              allFile(filter: { sourceInstanceName: { eq: "categories" } }) {
-                edges {
-                  node {
-                    id
-                    childMarkdownRemark {
-                      frontmatter {
-                        value
-                        title
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          `} render = { categoriesData => (
-            
-            <TagsProject data = {categoriesData}/>
-          )}
-        />
         {data ? <GridProject projects={data.allMarkdownRemark.edges} /> : null}
       </Container>
     </Layout>
@@ -64,6 +43,7 @@ export const query = graphql`
           frontmatter {
             title
             thumbnail
+            category
           }
         }
       }
