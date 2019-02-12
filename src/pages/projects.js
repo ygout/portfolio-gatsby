@@ -21,6 +21,7 @@ const ProjectsPage = ({ data }) => {
         ]}
       />
       <Container className="mt-5">
+        <h1 className="text-center page-title">Mes projets</h1>
         <StaticQuery
           query={graphql`
             query {
@@ -43,8 +44,6 @@ const ProjectsPage = ({ data }) => {
             <TagsProject data = {categoriesData}/>
           )}
         />
-        <h1 className="text-center page-title">Mes projets</h1>
-        
         {data ? <GridProject projects={data.allMarkdownRemark.edges} /> : null}
       </Container>
     </Layout>

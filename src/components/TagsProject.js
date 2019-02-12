@@ -2,25 +2,44 @@ import React from 'react'
 
 const TagsProject = ({ data }) => {
   const { edges: categories } = data.allFile
-  let category;
+  let category
   return (
     <section className="containe margin-middle">
-      <div className="row align-items-center">
-        {categories.map((node, i) => {
-          category = node.node.childMarkdownRemark.frontmatter;
-         console.log('e', category)
-        })}
+      <div className="row">
+        <div className="col text-center">
+          <button
+            active
+            aria-pressed="true"
+            data-toggle="button"
+            className="mr-2 btn btn-dark"
+          >
+            Tous
+          </button>
+          {categories.map((node, i) => {
+            category = node.node.childMarkdownRemark.frontmatter
+            return (
+              <TagProject
+                key={category.value}
+                value={category.value}
+                title={category.title}
+              />
+            )
+          })}
+        </div>
       </div>
     </section>
   )
 }
-export const Tag = ({ value, title }) => {
-  console.log('dataTag', value)
-  console.log('dataTag', title)
+export const TagProject = ({ value, title }) => {
   return (
     <>
-      {' '}
-      <div />
+      <button
+        aria-pressed="true"
+        data-toggle="button"
+        className="mr-2 btn btn-dark"
+      >
+        {title}
+      </button>
     </>
   )
 }
