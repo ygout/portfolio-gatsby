@@ -69,12 +69,12 @@ class CarouselProject extends Component {
             onClick={() => this.handleOnclickImg(i)}
             style={{ cursor: 'pointer' }}
             src={item.src}
+            alt={item.src}
           />
         </div>
       )
     })
-    {
-    }
+  
     return (
       <>
         <div className="mt-5">
