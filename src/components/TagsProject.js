@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 export default class TagsProject extends React.Component {
   constructor(props) {
@@ -66,14 +65,4 @@ export class TagProject extends React.Component {
       </>
     )
   }
-}
-
-TagsProject.propTypes = {
-  dataCategories: PropTypes.array,
-}
-
-TagProject.propTypes = {
-  value: PropTypes.string,
-  title: PropTypes.string,
-  onFilter: PropTypes.func,
 }
