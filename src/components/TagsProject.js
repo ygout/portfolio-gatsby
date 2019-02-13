@@ -13,7 +13,7 @@ export default class TagsProject extends React.Component {
     console.log('state', this.state.categories)
 
     const tags = this.state.categories.map(node => {
-      category = node.node.childMarkdownRemark.frontmatter;
+      category = node.node.childMarkdownRemark.frontmatter
       return (
         <TagProject
           key={category.value}
@@ -27,13 +27,19 @@ export default class TagsProject extends React.Component {
       <section className="containe margin-middle">
         <div className="row">
           <div className="col text-center">
-            <button
+            <TagProject
+              key='TOUS'
+              value='TOUS'
+              title='Tous'
+              onFilter={this.props.onFilter}
+            />
+            {/* <button
               aria-pressed="true"
               data-toggle="button"
               className="mr-2 btn btn-dark"
             >
               Tous
-            </button>
+            </button> */}
             {tags}
           </div>
         </div>
@@ -42,17 +48,28 @@ export default class TagsProject extends React.Component {
   }
 }
 
-export const TagProject = ({ value, title, onFilter }) => {
-  return (
-    <>
-      <button
-        aria-pressed="true"
-        data-toggle="button"
-        className="mr-2 btn btn-dark"
-        onClick={onFilter}
-      >
-        {title}
-      </button>
-    </>
-  )
+export class TagProject extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.click = this.click.bind(this)
+  }
+
+  click(value) {
+    this.props.onFilter(value)
+  }
+  render() {
+    return (
+      <>
+        <button
+          aria-pressed="true"
+          data-toggle="button"
+          className="mr-2 btn btn-dark"
+          onClick={() => this.click(this.props.value)}
+        >
+          {this.props.title}
+        </button>
+      </>
+    )
+  }
 }

@@ -10,11 +10,25 @@ export default class GridProject extends React.Component {
     this.state = {
       projects: this.props.projects,
     }
-    console.log('this.props.projects', this.props.projects)
+
     this.onFilter = this.onFilter.bind(this)
   }
-  onFilter(category){
-    console.log('category clicked ?', category);
+  onFilter(value) {
+    console.log('click', value)
+    console.log('this.props.projects', this.props.projects)
+    if (value === 'TOUS') {
+      this.setState({
+        projects: this.props.projects,
+      })
+    } else {
+      const projects = this.props.projects.filter(project => {
+        return project.node.frontmatter.category === value
+      })
+
+      this.setState({
+        projects: projects,
+      })
+    }
   }
   render() {
     return (
@@ -38,7 +52,10 @@ export default class GridProject extends React.Component {
             }
           `}
           render={categoriesData => (
-            <TagsProject dataCategories={categoriesData} />
+            <TagsProject
+              onFilter={this.onFilter}
+              dataCategories={categoriesData}
+            />
           )}
         />
         <section className="containe margin-middle">
