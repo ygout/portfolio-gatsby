@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Lightbox from 'react-images'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 class LightboxProject extends Component {
   constructor(props) {
@@ -34,12 +34,12 @@ class LightboxProject extends Component {
     )
   }
 }
-LightboxProject.PropTypes = {
-  items: PropTypes.array,
-  lightboxIsOpen: PropTypes.bool,
-  currentImage: PropTypes.number,
-  gotoPrevious: PropTypes.func,
-  gotoNext: PropTypes.func,
-  onClose: PropTypes.func,
-}
+// LightboxProject.PropTypes = {
+//   items: PropTypes.array,
+//   lightboxIsOpen: PropTypes.bool,
+//   currentImage: PropTypes.number,
+//   gotoPrevious: PropTypes.func,
+//   gotoNext: PropTypes.func,
+//   onClose: PropTypes.func,
+// }
 export default LightboxProject

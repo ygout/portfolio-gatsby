@@ -3,7 +3,6 @@ import ProjectCard from './ProjectCard/ProjectCard'
 import { graphql, StaticQuery } from 'gatsby'
 import TagsProject from '../components/TagsProject'
 import FlipMove from 'react-flip-move'
-import PropTypes from 'prop-types'
 
 export default class GridProject extends React.Component {
   constructor(props) {
@@ -70,8 +69,4 @@ export default class GridProject extends React.Component {
       </>
     )
   }
-}
-
-GridProject.propTypes = {
-  projects: PropTypes.array,
 }

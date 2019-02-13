@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import LightboxProject from '../Carousel/LightboxProject'
 import Slider from 'react-slick'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 class CarouselProject extends Component {
   constructor(props) {
@@ -94,7 +94,7 @@ class CarouselProject extends Component {
     )
   }
 }
-CarouselProject.PropTypes = {
-  items: PropTypes.array,
-}
+// CarouselProject.PropTypes = {
+//   items: PropTypes.array,
+// }
 export default CarouselProject
