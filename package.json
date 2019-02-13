@@ -29,6 +29,7 @@
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-flip-move": "^3.0.3",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.3.0",
     "react-images": "^0.5.19",

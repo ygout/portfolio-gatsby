@@ -33,13 +33,6 @@ export default class TagsProject extends React.Component {
               title='Tous'
               onFilter={this.props.onFilter}
             />
-            {/* <button
-              aria-pressed="true"
-              data-toggle="button"
-              className="mr-2 btn btn-dark"
-            >
-              Tous
-            </button> */}
             {tags}
           </div>
         </div>

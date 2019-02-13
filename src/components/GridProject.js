@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from './ProjectCard/ProjectCard'
 import { graphql, StaticQuery } from 'gatsby'
 import TagsProject from '../components/TagsProject'
+import FlipMove from 'react-flip-move'
 
 export default class GridProject extends React.Component {
   constructor(props) {
@@ -14,8 +15,6 @@ export default class GridProject extends React.Component {
     this.onFilter = this.onFilter.bind(this)
   }
   onFilter(value) {
-    console.log('click', value)
-    console.log('this.props.projects', this.props.projects)
     if (value === 'TOUS') {
       this.setState({
         projects: this.props.projects,
@@ -60,9 +59,11 @@ export default class GridProject extends React.Component {
         />
         <section className="containe margin-middle">
           <div className="row align-items-center">
-            {this.state.projects.map((project, i) => (
-              <ProjectCard key={project.node.id} project={project.node} />
-            ))}
+            <FlipMove typeName={null}>
+              {this.state.projects.map((project, i) => (
+                <ProjectCard key={project.node.id} project={project.node} />
+              ))}
+            </FlipMove>
           </div>
         </section>
       </>
