@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class TagsProject extends React.Component {
   constructor(props) {
@@ -28,9 +29,9 @@ export default class TagsProject extends React.Component {
         <div className="row">
           <div className="col text-center">
             <TagProject
-              key='TOUS'
-              value='TOUS'
-              title='Tous'
+              key="TOUS"
+              value="TOUS"
+              title="Tous"
               onFilter={this.props.onFilter}
             />
             {tags}
@@ -65,4 +66,14 @@ export class TagProject extends React.Component {
       </>
     )
   }
+}
+
+TagsProject.propTypes = {
+  dataCategories: PropTypes.array,
+}
+
+TagProject.propTypes = {
+  value: PropTypes.string,
+  title: PropTypes.string,
+  onFilter: PropTypes.func,
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LightboxProject from '../Carousel/LightboxProject'
 import Slider from 'react-slick'
+import PropTypes from 'prop-types'
 
 class CarouselProject extends Component {
   constructor(props) {
@@ -23,20 +24,18 @@ class CarouselProject extends Component {
     this.closeLightBoxProject = this.closeLightBoxProject.bind(this)
     this.handleOnclickImg = this.handleOnclickImg.bind(this)
 
-    this.gotoPreviousLightBoxProject = this.gotoPreviousLightBoxProject.bind(this)
+    this.gotoPreviousLightBoxProject = this.gotoPreviousLightBoxProject.bind(
+      this
+    )
     this.gotoNextLightBoxProject = this.gotoNextLightBoxProject.bind(this)
   }
   handleOnclickImg(index) {
-    console.log('index', index)
-    console.log(this.state)
     this.setState({
       lightboxIsOpen: true,
       lightboxIndex: index,
     })
   }
   closeLightBoxProject() {
-    console.log('Close lightBox project')
-    console.log(this.state)
     this.setState({
       lightboxIsOpen: false,
       lightboxIndex: 0,
@@ -44,7 +43,8 @@ class CarouselProject extends Component {
   }
   gotoPreviousLightBoxProject() {
     this.setState({
-      lightboxIndex: (this.state.lightboxIndex + this.items.length - 1) % this.items.length,
+      lightboxIndex:
+        (this.state.lightboxIndex + this.items.length - 1) % this.items.length,
     })
   }
   gotoNextLightBoxProject() {
@@ -94,5 +94,7 @@ class CarouselProject extends Component {
     )
   }
 }
-
+CarouselProject.PropTypes = {
+  items: PropTypes.array,
+}
 export default CarouselProject
