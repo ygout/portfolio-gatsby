@@ -53,6 +53,6 @@ results: >-
   certaines variables lié à ce framework. La réalisation de la documentation
   technique m'a permis d'être confronté à la difficulté de savoir comment
   expliquer de la meilleur façon le fonctionnement d'un composant.
-category: MOBILE
+category: WEB
 ---
 
