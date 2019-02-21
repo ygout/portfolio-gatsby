@@ -83,7 +83,6 @@ collections:
               },
             ],
           required: false,
-          default: [null],
         }
       - {
           name: 'category',

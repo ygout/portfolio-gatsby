@@ -6,7 +6,7 @@ export default class ProjectCard extends React.Component {
   render() {
     const { project } = this.props;
     return (
-      <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 mr-4 cell-container">
+      <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cell-container">
         <img alt={project.frontmatter.title} className="image" src={project.frontmatter.thumbnail} />
         <Link
           className="overlay"
