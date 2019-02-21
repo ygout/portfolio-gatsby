@@ -32,6 +32,10 @@ description: >-
 
   * Partie API REST développée avec le framework Express JS et mongoDB et
   hébergé sur Heroku.
+
+
+  Nous avons utilisé la librairie ionic-native _BarcodeScanner_ pour le scan des
+  codes ISBN.
 tools: 'Visual studio code, Heroku, Mongod'
 langages: 'Ionic 2.0, Node JS 5.X, Typescript, Express JS, MongoDb'
 results: >-
