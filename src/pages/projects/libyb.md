@@ -1,7 +1,7 @@
 ---
 title: Liby'B
 thumbnail: >-
-  https://res.cloudinary.com/ygout/image/upload/v1550742788/portfolio/Liby%27B/login.png
+  https://res.cloudinary.com/ygout/image/upload/v1550743759/portfolio/Liby%27B/Logo.png
 gallery:
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1550742788/portfolio/Liby%27B/profile.png
