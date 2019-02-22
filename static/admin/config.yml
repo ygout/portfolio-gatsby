@@ -97,23 +97,7 @@ collections:
             ],
           required: true,
         }
-  # - name: 'categories'
-  #   label: 'Categories'
-  #   folder: 'src/data/categories'
-  #   create: true
-  #   fields:
-  #     - {
-  #       name: 'valueP',
-  #       label: 'Value',
-  #       widget: 'string',
-  #       required: true,
-  #     }
-  #     - {
-  #       name: 'labelP',
-  #       label: 'Label',
-  #       widget: 'string',
-  #       required: true,
-  #     }
+        
   - label: 'Categories'
     name: 'categories'
     folder: 'src/data/categories'
@@ -121,3 +105,58 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Value', name: 'value', widget: 'string' }
+
+  - label: 'Experiences'
+    name: 'experiences'
+    folder: 'src/data/experiences'
+    create: true
+    fields:
+      - { label: 'Start date', name: 'startDate', widget: 'string' }
+      - { label: 'End date', name: 'endDate', widget: 'string' }
+      - { label: 'Job', name: 'job', widget: 'string' }
+      - { label: 'Company', name: 'company', widget: 'string' }
+      - { label: 'Place', name: 'place', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - {
+          name: 'category',
+          label: 'Category',
+          widget: 'select',
+          default: 'WEB',
+          options:
+            [
+              { label: 'Ecole', value: 'SCHOOL' },
+              { label: 'Professionnel', value: 'PRO' },
+              { label: 'Personnel', value: 'PERSO' },
+            ],
+        }
+  - label: 'Educations'
+    name: 'educations'
+    folder: 'src/data/educations'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Speciality', name: 'speciality', widget: 'string' }
+      - { label: 'Start date', name: 'startDate', widget: 'string' }
+      - { label: 'End date', name: 'endDate', widget: 'string' }
+      - { label: 'School', name: 'school', widget: 'string' }
+      - { label: 'Place', name: 'place', widget: 'string' }
+
+  - label: 'Skills'
+    name: 'skills'
+    folder: 'src/data/skills'
+    create: true
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Value', name: 'value', widget: 'number', max: 100}
+      - {
+          name: 'category',
+          label: 'Category',
+          widget: 'select',
+          default: 'LANGUAGE',
+          options:
+            [
+              { label: 'Langage', value: 'LANGUAGE' },
+              { label: 'Framework', value: 'FRAMEWORK' },
+              { label: 'Outils', value: 'TOOLS' },
+            ],
+        }
