@@ -108,7 +108,7 @@ collections:
 
   - label: 'Experiences'
     name: 'experiences'
-    folder: '/'
+    folder: 'src/data/experiences'
     identifier_field: job
     create: true
     fields:
@@ -132,7 +132,7 @@ collections:
         }
   - label: 'Educations'
     name: 'educations'
-    folder: '/'
+    folder: 'src/data/educations'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -145,7 +145,7 @@ collections:
   - label: 'Skills'
     name: 'skills'
     identifier_field: name
-    folder: '/'
+    folder: 'src/data/skills'
     create: true
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
