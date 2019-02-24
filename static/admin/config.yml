@@ -108,7 +108,8 @@ collections:
 
   - label: 'Experiences'
     name: 'experiences'
-    folder: 'src/data/experiences'
+    folder: '/'
+    identifier_field: job
     create: true
     fields:
       - { label: 'Start date', name: 'startDate', widget: 'string' }
@@ -121,7 +122,7 @@ collections:
           name: 'category',
           label: 'Category',
           widget: 'select',
-          default: 'WEB',
+          default: 'PRO',
           options:
             [
               { label: 'Ecole', value: 'SCHOOL' },
@@ -131,7 +132,7 @@ collections:
         }
   - label: 'Educations'
     name: 'educations'
-    folder: 'src/data/educations'
+    folder: '/'
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -143,7 +144,8 @@ collections:
 
   - label: 'Skills'
     name: 'skills'
-    folder: 'src/data/skills'
+    identifier_field: name
+    folder: '/'
     create: true
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
