@@ -35,6 +35,27 @@ module.exports = {
         path: `${__dirname}/src/data/categories`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `experiences`,
+        path: `${__dirname}/src/data/experiences`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `educations`,
+        path: `${__dirname}/src/data/educations`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `skills`,
+        path: `${__dirname}/src/data/skills`,
+      },
+    },
     `gatsby-transformer-remark`,
     // {
     //   resolve: 'gatsby-transformer-remark',
