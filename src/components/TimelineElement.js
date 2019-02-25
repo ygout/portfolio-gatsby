@@ -21,7 +21,9 @@ export default class TimeLineElement extends React.Component {
                     {experience.place + ", " + experience.company}
                 </h4>
                 <p id="___gatsby" dangerouslySetInnerHTML={{ __html: descriptionhtml }}>
-
+                </p>
+                <p>
+                    {descriptionhtml}
                 </p>
             </>
         )
