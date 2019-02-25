@@ -66,8 +66,9 @@ const ResumePage = ({ data }) => {
                   key={i}
                   className="vertical-ti+meline-element--work"
                   date={experience.node.childMarkdownRemark.frontmatter.startDate + "-" + experience.node.childMarkdownRemark.frontmatter.endDate}
-                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<MdWork />}
+                  iconStyle={experience.node.childMarkdownRemark.frontmatter.category == 'PRO' ? ({ background: 'rgb(33, 150, 243)', color: '#fff' }) : ({ background: 'rgb(233, 30, 99)', color: '#fff' })}
+
+                  icon={experience.node.childMarkdownRemark.frontmatter.category == 'PRO' ? (<MdWork />) : (<MdSchool />)}
                 >
                   <TimeLineElement experience={experience} ></TimeLineElement>
                 </VerticalTimelineElement>
