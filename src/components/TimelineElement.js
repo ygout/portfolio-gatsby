@@ -1,5 +1,4 @@
 import React from 'react'
-import { MdWork, MdSchool, MdStar } from 'react-icons/md'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
 
@@ -20,8 +19,8 @@ export default class TimeLineElement extends React.Component {
                 <h4 className="vertical-timeline-element-subtitle">
                     {experience.place + ", " + experience.company}
                 </h4>
-                <p dangerouslySetInnerHTML={{ __html: descriptionhtml }}>
-                </p>
+                <div id="___gatsby" dangerouslySetInnerHTML={{ __html: descriptionhtml }}>
+                </div>
             </>
         )
     }
