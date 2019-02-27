@@ -24,20 +24,7 @@ export default class ContactPage extends React.Component {
     handleRecaptcha = value => {
         this.setState({ "g-recaptcha-response": value });
     };
-    handleSubmit = e => {
-        e.preventDefault();
-        const form = e.target;
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({
-                "form-name": form.getAttribute("name"),
-                ...this.state
-            })
-        })
-            .then(() => navigateTo("/index/"))
-            .catch(error => alert(error));
-    };
+
     handleChangeMail(event) {
 
         const emailValue = event.target.value;
@@ -71,11 +58,11 @@ export default class ContactPage extends React.Component {
                 />
                 <Container className="mt-5">
                     <h1 className="text-center page-title">Me contacter</h1>
-                    <Form name="contact-form" method="post"
+                    <Form name="contact-form" method="POST"
                         data-netlify="true"
-                        data-netlify-recaptcha="true"
+                        action="/"
                         className="mt-5">
-
+                        
                         <noscript>
                             <p>This form won’t work with Javascript disabled</p>
                         </noscript>
