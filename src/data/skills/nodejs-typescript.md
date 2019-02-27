@@ -1,6 +1,6 @@
 ---
 name: NodeJs / Typescript
-value: '60'
+value: 60
 category: LANGUAGE
 ---
 

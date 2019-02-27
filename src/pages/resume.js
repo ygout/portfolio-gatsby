@@ -8,7 +8,7 @@ import {
 import TimeLineElement from '../components/TimelineElement';
 import { Progress } from 'reactstrap'
 import '../styles/vertical-timeline.css'
-import { MdWork, MdSchool, MdStar, MdAssignmentReturned } from 'react-icons/md'
+import { MdWork, MdSchool, MdStar, MdSettings } from 'react-icons/md'
 import { Container } from 'reactstrap'
 import { graphql } from 'gatsby';
 import sortByDate from '../helpers/sortByDate';
@@ -66,9 +66,9 @@ const ResumePage = ({ data }) => {
                   key={i}
                   className="vertical-ti+meline-element--work"
                   date={experience.node.childMarkdownRemark.frontmatter.startDate + "-" + experience.node.childMarkdownRemark.frontmatter.endDate}
-                  iconStyle={experience.node.childMarkdownRemark.frontmatter.category == 'PRO' ? ({ background: 'rgb(33, 150, 243)', color: '#fff' }) : ({ background: 'rgb(233, 30, 99)', color: '#fff' })}
+                  iconStyle={experience.node.childMarkdownRemark.frontmatter.category === 'PRO' ? ({ background: 'rgb(33, 150, 243)', color: '#fff' }) : ({ background: 'rgb(233, 30, 99)', color: '#fff' })}
 
-                  icon={experience.node.childMarkdownRemark.frontmatter.category == 'PRO' ? (<MdWork />) : (<MdSchool />)}
+                  icon={experience.node.childMarkdownRemark.frontmatter.category === 'PRO' ? (<MdWork />) : (<MdSchool />)}
                 >
                   <TimeLineElement experience={experience} ></TimeLineElement>
                 </VerticalTimelineElement>
@@ -122,7 +122,7 @@ const ResumePage = ({ data }) => {
             </div>
           </section>
           <section className="mt-5">
-            <h1 className="text-center mb-4">Formations</h1>
+            <h1 className="text-center mb-4"><MdStar /> Formations</h1>
             <table className="table">
               <tbody>
                 {educations.map((education, i) => (
@@ -131,7 +131,7 @@ const ResumePage = ({ data }) => {
                       <td rowSpan="3">{education.node.childMarkdownRemark.frontmatter.startDate + " - " + education.node.childMarkdownRemark.frontmatter.endDate}</td>
                       <td>{education.node.childMarkdownRemark.frontmatter.title}</td>
                     </tr>
-                    {education.node.childMarkdownRemark.frontmatter.speciality != " " ? (
+                    {education.node.childMarkdownRemark.frontmatter.speciality !== " " ? (
 
                       <tr>
                         <td>
