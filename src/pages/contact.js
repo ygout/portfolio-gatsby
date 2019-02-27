@@ -2,7 +2,15 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 import { Button, Form, FormGroup, Label, Input, FormFeedback, Container, Row, Col } from 'reactstrap';
+import Recaptcha from "react-google-recaptcha";
+import { navigateTo } from "gatsby-link";
 
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
 export default class ContactPage extends React.Component {
     constructor(props) {
         super(props)
@@ -11,7 +19,25 @@ export default class ContactPage extends React.Component {
             valid: null,
         }
         this.handleChangeMail = this.handleChangeMail.bind(this);
+        this.handleRecaptcha = this.handleRecaptcha.bind(this);
     }
+    handleRecaptcha = value => {
+        this.setState({ "g-recaptcha-response": value });
+    };
+    handleSubmit = e => {
+        e.preventDefault();
+        const form = e.target;
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({
+                "form-name": form.getAttribute("name"),
+                ...this.state
+            })
+        })
+            .then(() => navigateTo("/index/"))
+            .catch(error => alert(error));
+    };
     handleChangeMail(event) {
 
         const emailValue = event.target.value;
@@ -47,9 +73,12 @@ export default class ContactPage extends React.Component {
                     <h1 className="text-center page-title">Me contacter</h1>
                     <Form name="contact-form" method="post"
                         data-netlify="true"
-                        data-netlify-honeypot="bot-field"
+                        data-netlify-recaptcha="true"
                         className="mt-5">
-                        <input type="hidden" name="bot-field" />
+
+                        <noscript>
+                            <p>This form won’t work with Javascript disabled</p>
+                        </noscript>
                         <Row form>
                             <Col md={6}>
                                 <FormGroup>
@@ -73,6 +102,11 @@ export default class ContactPage extends React.Component {
                             <Label for="message">Votre message</Label>
                             <Input type="textarea" name="message" id="message" />
                         </FormGroup>
+                        <Recaptcha
+                            ref="recaptcha"
+                            sitekey={RECAPTCHA_KEY}
+                            onChange={this.handleRecaptcha}
+                        />
                         <Button type="submit" className="send-button">Envoyer</Button>
                     </Form>
 
