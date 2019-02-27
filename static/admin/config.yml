@@ -104,7 +104,7 @@ collections:
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'ValueCat', name: 'ValueCat', widget: 'string' }
+      - { label: 'ValueCat', name: 'valueCat', widget: 'string' }
 
   - label: 'Experiences'
     name: 'experiences'
