@@ -16,8 +16,8 @@ export default class TagsProject extends React.Component {
       category = node.node.childMarkdownRemark.frontmatter
       return (
         <TagProject
-          key={category.value}
-          value={category.value}
+          key={category.valueCat}
+          value={category.valueCat}
           title={category.title}
           onFilter={this.props.onFilter}
         />
