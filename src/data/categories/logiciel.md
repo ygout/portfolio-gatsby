@@ -1,5 +1,5 @@
 ---
 title: Logiciel
-value: SOFTWARE
+test: SOFTWARE
 ---
 

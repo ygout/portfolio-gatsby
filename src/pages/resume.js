@@ -205,7 +205,6 @@ query ResumePagequery {
         sourceInstanceName
         childMarkdownRemark {
           frontmatter {
-            value
             name
             category
           }
