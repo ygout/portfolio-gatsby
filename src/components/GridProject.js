@@ -41,7 +41,7 @@ export default class GridProject extends React.Component {
                     id
                     childMarkdownRemark {
                       frontmatter {
-                        test
+                        valueCat
                         title
                       }
                     }

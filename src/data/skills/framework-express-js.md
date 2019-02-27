@@ -1,6 +1,6 @@
 ---
 name: Framework Express Js
-value: 50
+valueSkill: 50
 category: FRAMEWORK
 ---
 

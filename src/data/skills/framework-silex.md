@@ -1,6 +1,6 @@
 ---
 name: Framework Silex
-value: 45
+valueSkill: 45
 category: FRAMEWORK
 ---
 

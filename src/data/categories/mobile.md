@@ -1,5 +1,5 @@
 ---
 title: Mobile
-test: MOBILE
+ValueCat: MOBILE
 ---
 

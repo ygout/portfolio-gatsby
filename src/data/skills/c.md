@@ -1,6 +1,6 @@
 ---
 name: 'C#'
-value: 50
+valueSkill: 50
 category: LANGUAGE
 ---
 

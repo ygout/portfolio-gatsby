@@ -1,6 +1,6 @@
 ---
 name: NodeJs / Typescript
-value: 60
+valueSkill: 60
 category: LANGUAGE
 ---
 

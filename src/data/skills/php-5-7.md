@@ -1,6 +1,6 @@
 ---
 name: PHP 5/7
-value: 60
+valueSkill: 60
 category: LANGUAGE
 ---
 

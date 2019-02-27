@@ -1,6 +1,6 @@
 ---
 name: Netlify / Netlify CMS
-value: 30
+valueSkill: 30
 category: FRAMEWORK
 ---
 

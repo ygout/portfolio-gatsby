@@ -1,5 +1,5 @@
 ---
 title: Logiciel
-test: SOFTWARE
+ValueCat: SOFTWARE
 ---
 
