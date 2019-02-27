@@ -1,6 +1,6 @@
 ---
-name: Gatsby JS
-value: 45
+name: Netlify / Netlify CMS
+value: 30
 category: FRAMEWORK
 ---
 
