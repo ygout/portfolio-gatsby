@@ -206,6 +206,7 @@ query ResumePagequery {
         childMarkdownRemark {
           frontmatter {
             name
+            valueSkill
             category
           }
         }
