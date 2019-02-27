@@ -9,6 +9,7 @@ import TimeLineElement from '../components/TimelineElement';
 import { Progress } from 'reactstrap'
 import '../styles/vertical-timeline.css'
 import { MdWork, MdSchool, MdStar, MdSettings } from 'react-icons/md'
+import { FaBook } from 'react-icons/fa'
 import { Container } from 'reactstrap'
 import { graphql } from 'gatsby';
 import sortByDate from '../helpers/sortByDate';
@@ -56,7 +57,7 @@ const ResumePage = ({ data }) => {
       />
       <Container className="mt-5">
         <h1 className="text-center page-title">
-          Mes expériences professionnelles et formations
+          <MdWork />  Mes expériences professionnelles et formations
         </h1>
         <div className="container mt-5">
           <section>
@@ -82,7 +83,7 @@ const ResumePage = ({ data }) => {
           </section>
           <section>
             <h1 className="text-center">
-              <span className="glyphicon glyphicon-cog" /> Compétences
+              <MdSettings />  Compétences
             </h1>
 
             <div>
@@ -91,8 +92,8 @@ const ResumePage = ({ data }) => {
                   {skillsLanguages.map((skill, i) => (
                     <div key={i} className="mt-2">
                       <strong>{skill.node.childMarkdownRemark.frontmatter.name}</strong>
-                      <Progress color="info" value={skill.node.childMarkdownRemark.frontmatter.value}>
-                        {skill.node.childMarkdownRemark.frontmatter.value + "%"}
+                      <Progress color="info" value={skill.node.childMarkdownRemark.frontmatter.valueSkill}>
+                        {skill.node.childMarkdownRemark.frontmatter.valueSkill + "%"}
                       </Progress>
                     </div>
                   ))}
@@ -101,8 +102,8 @@ const ResumePage = ({ data }) => {
                   {skillsFramework.map((skill, i) => (
                     <div key={i} className="mt-2">
                       <strong>{skill.node.childMarkdownRemark.frontmatter.name}</strong>
-                      <Progress color="success" value={skill.node.childMarkdownRemark.frontmatter.value}>
-                        {skill.node.childMarkdownRemark.frontmatter.value + "%"}
+                      <Progress color="success" value={skill.node.childMarkdownRemark.frontmatter.valueSkill}>
+                        {skill.node.childMarkdownRemark.frontmatter.valueSkill + "%"}
                       </Progress>
                     </div>
                   ))}
@@ -112,8 +113,8 @@ const ResumePage = ({ data }) => {
                   {skillsTools.map((skill, i) => (
                     <div key={i} className="mt-2">
                       <strong>{skill.node.childMarkdownRemark.frontmatter.name}</strong>
-                      <Progress color="warning" value={skill.node.childMarkdownRemark.frontmatter.value}>
-                        {skill.node.childMarkdownRemark.frontmatter.value + "%"}
+                      <Progress color="warning" value={skill.node.childMarkdownRemark.frontmatter.valueSkill}>
+                        {skill.node.childMarkdownRemark.frontmatter.valueSkill + "%"}
                       </Progress>
                     </div>
                   ))}
@@ -122,7 +123,7 @@ const ResumePage = ({ data }) => {
             </div>
           </section>
           <section className="mt-5">
-            <h1 className="text-center mb-4"><MdStar /> Formations</h1>
+            <h1 className="text-center mb-4"><FaBook />  Formations</h1>
             <table className="table">
               <tbody>
                 {educations.map((education, i) => (

@@ -1,5 +1,5 @@
 ---
 title: Web
-ValueCat: WEB
+valueCat: WEB
 ---
 
