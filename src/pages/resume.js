@@ -76,7 +76,7 @@ const ResumePage = ({ data }) => {
               ))}
               <VerticalTimelineElement
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                icon={<StarIcon />}
+                icon={<MdStar />}
               />
             </VerticalTimeline>
           </section>
