@@ -14,14 +14,14 @@ export default class ContactPage extends React.Component {
     }
     handleChangeMail(event) {
 
-        const emailValue  = event.target.value;
+        const emailValue = event.target.value;
         var validMailreg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (validMailreg.test(emailValue.toLowerCase())){
+        if (validMailreg.test(emailValue.toLowerCase())) {
             this.setState({
                 invalid: false,
                 valid: true,
             })
-        }else {
+        } else {
             this.setState({
                 invalid: true,
                 valid: false,
@@ -49,6 +49,7 @@ export default class ContactPage extends React.Component {
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
                         className="mt-5">
+                        <input type="hidden" name="bot-field" />
                         <Row form>
                             <Col md={6}>
                                 <FormGroup>
@@ -72,7 +73,7 @@ export default class ContactPage extends React.Component {
                             <Label for="message">Votre message</Label>
                             <Input type="textarea" name="message" id="message" />
                         </FormGroup>
-                        <Button className="send-button">Envoyer</Button>
+                        <Button type="submit" className="send-button">Envoyer</Button>
                     </Form>
 
                 </Container>
