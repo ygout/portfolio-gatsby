@@ -5,12 +5,6 @@ import { Button, Form, FormGroup, Label, Input, FormFeedback, Container, Row, Co
 import Recaptcha from "react-google-recaptcha";
 import { navigateTo } from "gatsby-link";
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
-function encode(data) {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
 export default class ContactPage extends React.Component {
     constructor(props) {
         super(props)
@@ -89,11 +83,6 @@ export default class ContactPage extends React.Component {
                             <Label for="message">Votre message</Label>
                             <Input type="textarea" name="message" id="message" />
                         </FormGroup>
-                        <Recaptcha
-                            ref="recaptcha"
-                            sitekey={RECAPTCHA_KEY}
-                            onChange={this.handleRecaptcha}
-                        />
                         <Button type="submit" className="send-button">Envoyer</Button>
                     </Form>
 
