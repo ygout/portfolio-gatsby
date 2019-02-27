@@ -1,8 +1,22 @@
 ---
 title: Portfolio V1
 thumbnail: >-
-  https://res.cloudinary.com/ygout/image/upload/v1551118932/portfolio/Portfolio%20V1/moi.jpg
-gallery: []
+  https://res.cloudinary.com/ygout/image/upload/v1551257838/portfolio/Portfolio%20V1/home.png
+gallery:
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257838/portfolio/Portfolio%20V1/home.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257839/portfolio/Portfolio%20V1/cv.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257839/portfolio/Portfolio%20V1/cv3.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257838/portfolio/Portfolio%20V1/Auth.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257838/portfolio/Portfolio%20V1/contact2.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257838/portfolio/Portfolio%20V1/contact.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1551257838/portfolio/Portfolio%20V1/cv2.png
 description: >-
   Création d'un portfolio avec mise en place d'un micro cms en utilisant le
   framework silex.
