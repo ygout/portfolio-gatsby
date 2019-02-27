@@ -32,10 +32,24 @@ description: >-
   Silex aujourd'hui déprécié en faveur de Symfony 4.
 
 
-
-
   Utilisation de Github pour le versioning du code source vous pouvez retrouver
   celui ci en fin de page.
+
+
+  **Fonctionnalités**:
+
+
+  * Consultation des biens en locations
+
+  * Connexion en tant qu'administrateur
+
+  * Système de filtres sur les biens (surface, budget )
+
+  * Formulaire d'ajout, d'édition, suppression de biens
+
+  * Formulaire d'ajout, d'édition, suppression d'options (balcon, garage, ...)
+
+  * Ajouter une miniature pour chaque bien
 tools: 'PhpStorm, Composer, GitHub'
 langages: 'PHP 7.2, Symfony 4, jQuery 3.3, Bootstrap 4.1.3, MySQL 5.0'
 results: >-
