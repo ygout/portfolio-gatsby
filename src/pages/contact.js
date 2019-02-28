@@ -4,6 +4,7 @@ import SEO from '../components/Seo'
 import { Button, Form, FormGroup, Label, Input, FormFeedback, Container, Row, Col } from 'reactstrap';
 import Recaptcha from "react-google-recaptcha";
 import { navigateTo } from "gatsby-link";
+import { MdSend } from 'react-icons/md'
 
 export default class ContactPage extends React.Component {
     constructor(props) {
@@ -14,10 +15,16 @@ export default class ContactPage extends React.Component {
         }
         this.handleChangeMail = this.handleChangeMail.bind(this);
         this.handleRecaptcha = this.handleRecaptcha.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleRecaptcha = value => {
         this.setState({ "g-recaptcha-response": value });
     };
+
+    handleSubmit(event) {
+        console.log('submited')
+        event.preventDefault();
+    }
 
     handleChangeMail(event) {
 
@@ -54,9 +61,11 @@ export default class ContactPage extends React.Component {
                     <h1 className="text-center page-title">Me contacter</h1>
                     <Form name="contact-form" method="POST"
                         data-netlify="true"
-                        action="/"
-                        className="mt-5">
-                        
+                        className="mt-5"
+                        onSubmit={this.handleSubmit}
+                        action="/thanks"
+                    >
+
                         <noscript>
                             <p>This form won’t work with Javascript disabled</p>
                         </noscript>
@@ -64,13 +73,13 @@ export default class ContactPage extends React.Component {
                             <Col md={6}>
                                 <FormGroup>
                                     <Label for="firstName">Prénom</Label>
-                                    <Input type="text" name="firstName" id="firstName"></Input>
+                                    <Input type="text" name="firstName" id="firstName" required></Input>
                                 </FormGroup>
                             </Col>
                             <Col md={6}>
                                 <FormGroup>
                                     <Label for="name">Nom</Label>
-                                    <Input type="text" name="name" id="name"></Input>
+                                    <Input type="text" name="name" id="name" required></Input>
                                 </FormGroup>
                             </Col>
                         </Row>
@@ -81,9 +90,9 @@ export default class ContactPage extends React.Component {
                         </FormGroup>
                         <FormGroup>
                             <Label for="message">Votre message</Label>
-                            <Input type="textarea" name="message" id="message" />
+                            <Input type="textarea" name="message" id="message" required />
                         </FormGroup>
-                        <Button type="submit" className="send-button">Envoyer</Button>
+                        <Button className="send-button">Envoyer <MdSend /></Button>
                     </Form>
 
                 </Container>
