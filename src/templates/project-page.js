@@ -87,7 +87,6 @@ export const ProjectPageTemplate = ({
 
 const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log('data.markdownRemark', data.markdownRemark.fields.descriptionHtml)
   return (
     <Layout>
       <ProjectPageTemplate

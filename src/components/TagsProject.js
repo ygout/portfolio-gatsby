@@ -9,9 +9,7 @@ export default class TagsProject extends React.Component {
   }
 
   render() {
-    let category
-    console.log('state', this.state.categories)
-
+    let category;
     const tags = this.state.categories.map(node => {
       category = node.node.childMarkdownRemark.frontmatter
       return (
@@ -24,7 +22,7 @@ export default class TagsProject extends React.Component {
       )
     })
     return (
-      <section className="containe margin-middle">
+      <section className="container margin-middle">
         <div className="row">
           <div className="col text-center">
             <TagProject

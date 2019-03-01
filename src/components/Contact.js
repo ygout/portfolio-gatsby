@@ -32,7 +32,6 @@ export default class ContactPage extends React.Component {
 
         // Validation email
         if (event.target.name === 'email') {
-            console.log('Its mail change')
             this.handleChangeMail(event);
         }
     }
@@ -60,7 +59,6 @@ export default class ContactPage extends React.Component {
     }
 
     handleChangeMail(event) {
-        console.log('handleChangeMail')
         const emailValue = event.target.value;
         var validMailreg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (validMailreg.test(emailValue.toLowerCase())) {

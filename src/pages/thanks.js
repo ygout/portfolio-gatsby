@@ -6,6 +6,19 @@ import { MdEmail } from 'react-icons/md'
 
 export default () => (
     <Layout>
+        <SEO
+            title="envoye"
+            keywords={[
+                `portoflio`,
+                `contact`,
+                `react`,
+                `gatsby`,
+                `yohann`,
+                `goutaret`,
+                `me contacter`,
+                `merci`,
+            ]}
+        />
         <Container className="mt-5 text-center">
             <div>
                 <h1>Merci !</h1>

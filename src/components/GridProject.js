@@ -57,7 +57,7 @@ export default class GridProject extends React.Component {
             />
           )}
         />
-        <section className="containe margin-middle">
+        <section className="container margin-middle">
           <div className="row align-items-center">
             <FlipMove typeName={null}>
               {this.state.projects.map((project, i) => (

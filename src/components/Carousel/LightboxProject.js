@@ -17,8 +17,6 @@ class LightboxProject extends Component {
       currentImage: nextProps.currentImage,
       lightboxIsOpen: nextProps.lightboxIsOpen,
     })
-    console.log('Update receveied')
-    console.log('state child', this.state)
   }
 
   render() {

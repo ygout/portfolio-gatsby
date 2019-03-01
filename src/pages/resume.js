@@ -34,11 +34,10 @@ const ResumePage = ({ data }) => {
     return skill.node.childMarkdownRemark.frontmatter.category === 'TOOLS'
   });
 
-  console.log('data', data)
   return (
     <Layout>
       <SEO
-        title="CV"
+        title="resume"
         keywords={[
           `portoflio`,
           `experience`,
@@ -53,6 +52,8 @@ const ResumePage = ({ data }) => {
           `full-stack`,
           `Full-Stack`,
           `FullStack`,
+          `developper`,
+          `developpeur`,
         ]}
       />
       <Container className="mt-5">

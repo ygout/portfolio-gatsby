@@ -5,12 +5,10 @@ import remarkHTML from 'remark-html'
 export default class TimeLineElement extends React.Component {
     render() {
         const experience = this.props.experience.node.childMarkdownRemark.frontmatter;
-        console.log('experience', experience)
         const descriptionhtml = remark()
             .use(remarkHTML)
             .processSync(experience.description)
             .toString();
-        console.log('description', descriptionhtml)
         return (
             <>
                 <h3 className="vertical-timeline-element-title">
