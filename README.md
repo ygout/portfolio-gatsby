@@ -89,13 +89,13 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 ## 🧐 Functionality
 
  - Admin Panel (CMS)
-  - Add Project (display to project grid + project detail) with preview template
-  - Add Category Project (no preview template)
-  - Add Experience for resume page (no preview template)
-  - Add Education for resume page (no preview template)
-  - Add Skil for resume page (no preview template)
+   - Add Project (display to project grid + project detail) with preview template
+   - Add Category Project (no preview template)
+   - Add Experience for resume page (no preview template)
+   - Add Education for resume page (no preview template)
+   - Add Skil for resume page (no preview template)
   
-- Contact Formform
+- Contact Form
 - Grid projects
 - Filtering gird project by categories
 - View project detail
