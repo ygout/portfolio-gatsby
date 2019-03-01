@@ -4,13 +4,15 @@ thumbnail: >-
   https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/logo-lyon2.jpg
 gallery:
   - >-
-    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/15e9d2_1d96683664644d09900b34e606b873c2.png
+    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/15e9d2_1d96683664644d09900b34e606b873c2.png
   - >-
-    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/15e9d2_2a57f997b2b84b9e84b4d4a7c6f37a2c.png
+    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/15e9d2_2a57f997b2b84b9e84b4d4a7c6f37a2c.png
   - >-
-    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/15e9d2_064d687039f64daf9516297a4f0ba6b1.png
+    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/15e9d2_064d687039f64daf9516297a4f0ba6b1.png
   - >-
-    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/15e9d2_8d61f39c4b60479db70778eb1873b9be.png
+    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/15e9d2_8d61f39c4b60479db70778eb1873b9be.png
+  - >-
+    https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/15e9d2_2f2279c7290141a7a10ade33bac2cc82.png
 description: >-
   **Contexte: **L'université Lyon 2 souhaite se moderniser et rationaliser ses
   dépenses.
