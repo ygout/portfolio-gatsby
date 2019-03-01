@@ -54,6 +54,7 @@ const ResumePage = ({ data }) => {
           `FullStack`,
           `developper`,
           `developpeur`,
+          `ygout`,
         ]}
       />
       <Container className="mt-5">

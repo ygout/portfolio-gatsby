@@ -21,6 +21,7 @@ const IndexPage = () => (
         `gatsby`,
         `yohann`,
         `goutaret`,
+        `ygout`,
       ]}
     />
     <section className="text-center mt-5">

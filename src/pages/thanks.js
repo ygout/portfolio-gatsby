@@ -17,6 +17,7 @@ export default () => (
                 `goutaret`,
                 `me contacter`,
                 `merci`,
+                `ygout`,
             ]}
         />
         <Container className="mt-5 text-center">

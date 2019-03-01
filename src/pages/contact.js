@@ -17,6 +17,7 @@ const ContactPage = () => {
                     `yohann`,
                     `goutaret`,
                     `me contacter`,
+                    `ygout`,
                 ]}
             />
             <Contact />

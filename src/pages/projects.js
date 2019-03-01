@@ -21,6 +21,7 @@ const ProjectsPage = ({ data }) => {
           `goutaret`,
           `projets`,
           `projects`,
+          `ygout`,
         ]}
       />
       <Container className="mt-5">
