@@ -115,7 +115,7 @@ export default class ContactPage extends React.Component {
                         sitekey={RECAPTCHA_KEY}
                         onChange={this.handleRecaptcha}
                     />
-                    <Button className="send-button">Envoyer <MdSend /></Button>
+                    <Button className="send-button mt-2">Envoyer <MdSend /></Button>
                 </Form>
 
             </Container>
