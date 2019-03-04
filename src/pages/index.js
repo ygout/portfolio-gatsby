@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
-import avatar from '../images/avatar-circle-B.png' // Tell Webpack this JS file uses this image
+import avatar from '../images/avatar.png' // Tell Webpack this JS file uses this image
 
 const IndexPage = () => (
   <Layout>
