@@ -1,5 +1,5 @@
 ---
-title: oPtc-front
+title: opTc-front
 thumbnail: >-
   https://res.cloudinary.com/ygout/image/upload/v1551861300/portfolio/optc-front/Capture.jpg
 gallery:
@@ -16,7 +16,7 @@ gallery:
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1551861299/portfolio/optc-front/Capture3.jpg
 description: >-
-  Partie Front de l'application oPtc qui est l'évolution de l'application
+  Partie Front de l'application opTc qui est l'évolution de l'application
   FullTracking (application développé durant mon alternance à oPhone).
 tools: 'Visual studio code, Gitlab, Jenkins, Docker'
 langages: 'Framework Angular 4, Typescript, HTML5, CSS3, Materialize, OpenStreetmap API'
