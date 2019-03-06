@@ -60,7 +60,7 @@ results: >-
   composant.
 
 
-  J'ai aussi pour découvrir et utilisé des nouveaux outils utilisés dans la
+  J'ai aussi pu découvrir et utilisé des nouveaux outils utilisés dans la
   réalisation de site statiques.
 src_file:
   - srcFile:
