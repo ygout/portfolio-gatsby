@@ -24,8 +24,8 @@ gallery:
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1551864426/portfolio/portfoliov2/Capture10.jpg
 description: >-
-  Refonte de mon portfolio avec Gatsby JS qui permet de générer des sites
-  statiques via le framework React JS. 
+  Refonte de mon portfolio avec le framework open source Gatsby JS qui permet de
+  générer des sites statiques via des composants react JS. 
 
 
   Ajout de netlify CMS qui permet de construire son propre CMS pour l'ajout et
@@ -52,12 +52,14 @@ description: >-
 
   [Netlify](https://www.netlify.com/) permet quant à lui de déployer son site
   statique gratuitement via le code sources versionné sur la plateforme GitHub.
-tools: 'Visual studio code, npm, Gatsby JS, Netlify CMS, Netlify'
-langages: 'Framework React JS, node JS v 10.15.0, Bootstrap 4'
+tools: 'Visual studio code, npm'
+langages: >-
+  Framework React JS, Framework Gatsby JS, node JS v 10.15.0, Bootstrap 4, 
+  Netlify CMS, Netlify
 results: >-
   La refonte de mon portoflio m'a permis de faire ma veille technologique et
-  d'apprendre à utiliser le framework react JS et le développement front par
-  composant.
+  d'apprendre à utiliser le framework react JS via Gatsby JS et Netlify CMS et
+  le développement front par composant.
 
 
   J'ai aussi pu découvrir et utilisé des nouveaux outils utilisés dans la
