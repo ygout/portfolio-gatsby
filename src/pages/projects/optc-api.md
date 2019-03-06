@@ -1,5 +1,5 @@
 ---
-title: oPtc-API
+title: opTc-API
 thumbnail: >-
   https://res.cloudinary.com/ygout/image/upload/v1551861285/portfolio/optc-api/Capture2.jpg
 gallery:
@@ -11,12 +11,10 @@ gallery:
     https://res.cloudinary.com/ygout/image/upload/v1551861285/portfolio/optc-api/Capture3.jpg
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1551861285/portfolio/optc-api/Capture4.jpg
-description: Participation aux développements de l'API Rest oPtc de oPhone.
+description: ''
 tools: 'Visual studio code, Oracle'
 langages: 'Typescript, node JS, Swagger UI, Open-api express'
-results: >-
-  Génération d'une API Rest avec sa documentation swagger permettant de tester
-  en direct chaque ressources.
+results: ''
 src_file:
   - srcFile:
       label: ' '
