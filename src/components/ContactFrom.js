@@ -12,7 +12,7 @@ function encode(data) {
         .join("&");
 }
 
-export default class ContactPage extends React.Component {
+export default class ContactForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -75,8 +75,6 @@ export default class ContactPage extends React.Component {
     }
     render() {
         return (
-            <Container className="mt-5">
-                <h1 className="text-center page-title">Me contacter</h1>
                 <Form name="contact-form" method="POST"
                     data-netlify="true"
                     data-netlify-recaptcha="true"
@@ -116,8 +114,6 @@ export default class ContactPage extends React.Component {
                     />
                     <Button className="send-button mt-2">Envoyer <MdSend /></Button>
                 </Form>
-
-            </Container>
         );
     }
 }
