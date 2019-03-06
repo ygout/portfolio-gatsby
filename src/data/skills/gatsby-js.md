@@ -1,6 +1,6 @@
 ---
-name: Netlify / Netlify CMS
-valueSkill: 30
+name: Gatsby JS
+valueSkill: 50
 category: FRAMEWORK
 ---
 
