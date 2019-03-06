@@ -19,7 +19,7 @@ description: >-
   Partie Front de l'application oPtc qui est l'évolution de l'application
   FullTracking (application développé durant mon alternance à oPhone).
 tools: 'Visual studio code, Gitlab, Jenkins, Docker'
-langages: 'Framework Angular 4, Typescript, HTML5, CSS3, Materialize, OpenStreet API'
+langages: 'Framework Angular 4, Typescript, HTML5, CSS3, Materialize, OpenStreetmap API'
 results: ''
 src_file:
   - srcFile:
