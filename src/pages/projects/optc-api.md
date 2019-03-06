@@ -12,8 +12,8 @@ gallery:
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1551861285/portfolio/optc-api/Capture4.jpg
 description: ''
-tools: 'Visual studio code, Oracle'
-langages: 'Typescript, node JS, Swagger UI, Open-api express'
+tools: ''
+langages: ''
 results: ''
 src_file:
   - srcFile:
