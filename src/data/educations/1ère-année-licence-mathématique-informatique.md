@@ -1,5 +1,5 @@
 ---
-title: 1ère année licence mathématique-informatique
+title: 1ère année licence mathématiques-informatique
 speciality: ' '
 startDate: Septembre 2011
 endDate: Juin 2012
