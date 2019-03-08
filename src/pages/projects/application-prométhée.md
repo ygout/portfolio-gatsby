@@ -1,7 +1,7 @@
 ---
 title: Application Prométhée
 thumbnail: >-
-  https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/logo-lyon2.jpg
+  https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/logo-lyon2.jpg
 gallery:
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/prometh%C3%A9e/15e9d2_1d96683664644d09900b34e606b873c2.png
