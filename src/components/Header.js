@@ -31,27 +31,27 @@ export default class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mx-auto" navbar>
               <NavItem>
-                <NavLink href="/">Accueil</NavLink>
+                <NavLink aria-label="Accueil" href="/">Accueil</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/projects/">Projets</NavLink>
+                <NavLink aria-label="Projets" href="/projects/">Projets</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/resume">CV</NavLink>
+                <NavLink aria-label="CV" href="/resume">CV</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
+                <NavLink aria-label="contact" href="/contact">Contact</NavLink>
               </NavItem>
 
             </Nav>
             <Nav className="mx-auto" navbar>
               <NavItem>
-                <NavLink rel="noopener noreferrer" target="_blank" href="https://github.com/ygout" >
+                <NavLink aria-label="gitHub" rel="noopener noreferrer" target="_blank" href="https://github.com/ygout" >
                   <FaGithub size="1.5em"></FaGithub>
                 </NavLink>
               </NavItem>
               <NavItem >
-                <NavLink rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/yohann-goutaret-5150a9149/" >
+                <NavLink aria-label="linkedin" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/yohann-goutaret-5150a9149/" >
                   <FaLinkedin size="1.5em"></FaLinkedin>
                 </NavLink>
               </NavItem>

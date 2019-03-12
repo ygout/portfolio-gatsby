@@ -12,6 +12,8 @@ const IndexPage = () => (
         `accueil`,
         `home`,
         `full-stack`,
+        `fullstack`,
+        `fullStack`,
         `back-end`,
         `developper`,
         `developpeur`,
@@ -22,6 +24,9 @@ const IndexPage = () => (
         `yohann`,
         `goutaret`,
         `ygout`,
+        `Yohann`,
+        `Goutaret`,
+        `FullStack`,
       ]}
     />
     <section className="text-center mt-5">
