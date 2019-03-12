@@ -1,7 +1,7 @@
 ---
 title: Monin Mécanique
 thumbnail: >-
-  https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/photo-1-1-.png
+  https://res.cloudinary.com/ygout/image/upload/v1549357494/portfolio/monin%20m%C3%A9canique/photo-1-1-.png
 gallery:
   - >-
     https://res.cloudinary.com/ygout/image/upload/v1549357495/portfolio/monin%20m%C3%A9canique/photo-2-1-.png
