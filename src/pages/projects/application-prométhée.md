@@ -42,7 +42,7 @@ description: >-
 tools: >-
   Bonita Studio 5.10.1, Bootstrap 3, Crunch (compilateur editeur LESS),
   NetBeans, PackageXAMPP
-langages: 'LESS, Html 5, CSS 3, PHP 5.4, SQLite, Javasccript/jQuery'
+langages: 'LESS, Html 5, CSS 3, PHP 5.4, SQLite, Javasccript/jQuery.'
 results: >-
   Ce stage de deuxième année m'a permis d'approfondir le travail en
   collaboration (ici avec mon tuteur): rendre compte de son avancement, partage
