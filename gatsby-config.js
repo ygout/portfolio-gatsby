@@ -53,6 +53,12 @@ module.exports = {
         path: `${__dirname}/src/data/skills`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-136167079-1",
+      },
+    },
     `gatsby-transformer-remark`,
     // {
     //   resolve: 'gatsby-transformer-remark',
