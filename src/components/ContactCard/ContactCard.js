@@ -13,7 +13,7 @@ export default function ContactCard() {
         </div>
         <div className="flip-card-back">
           <h3>Yohann Goutaret</h3>
-          <p>Lyon / Valence / Grenoble</p>
+          <p>Valence / Grenoble</p>
           <p>Développeur Full Stack</p>
           <p>06 30 19 22 56</p>
           <p>yohann.goutaret@gmail.com</p>
