@@ -46,7 +46,7 @@ description: >-
 
 
   Netlify CMS va générer des fichiers MarkDown contenant les différentes
-  informations qui va être ensuite utilisé par Gatsby JS pour générer les
+  informations qui vont être ensuite utilisé par Gatsby JS pour générer les
   données dans mon site statique.
 
 
