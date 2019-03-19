@@ -42,7 +42,9 @@ description: >-
   * Sécurisation de l'API via token JWT
 tools: 'Visual studio code, Oracle'
 langages: 'Typescript, node JS, Swagger UI, Open-api express, PUG View'
-results: ''
+results: >-
+  Ce projet m'a permis de monter en compétence en Node JS notamment en
+  Typescript mais aussi sur les outils comme Docker et Jenkins.
 src_file:
   - srcFile:
       label: ' '
