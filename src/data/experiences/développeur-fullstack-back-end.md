@@ -1,7 +1,7 @@
 ---
 startDate: Novembre 2017
 endDate: Aujourd'hui
-job: Développeur FullStack Back-End
+job: Développeur Full Stack
 company: oPhone
 place: Villeurbanne
 description: >-
