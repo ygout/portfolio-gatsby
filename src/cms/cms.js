@@ -3,10 +3,12 @@
  * extension registration methods, such as `registerWidget` and
  * `registerPreviewTemplate`.
  */
-import CMS from 'netlify-cms'
+import CMS from 'netlify-cms-app';
 import ProjectPagePreview from './preview-templates/ProjectPagePreview'
+import cloudinary from 'netlify-cms-media-library-cloudinary';
 
 CMS.registerPreviewTemplate('projects', ProjectPagePreview);
+CMS.registerMediaLibrary(cloudinary);
 // /**
 //  * Any imported styles will automatically be applied to the editor preview
 //  * pane, there is no need to use `registerPreviewStyle` for imported styles.
