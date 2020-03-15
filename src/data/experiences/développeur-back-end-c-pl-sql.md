@@ -1,5 +1,5 @@
 ---
-startDate: 29/07/2019
+startDate: Juillet 2019
 endDate: Aujourd'hui
 job: 'Développeur Back-End C# PL/SQL'
 company: Synchrone
