@@ -17,5 +17,5 @@ description: >-
   * Package PL/SQL Oracle 11g
 
   * Visual Studio 2017
-category: PERSO
+category: PRO
 ---
