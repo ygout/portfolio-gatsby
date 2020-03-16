@@ -17,5 +17,9 @@ description: >-
   * Package PL/SQL Oracle 11g
 
   * Visual Studio 2017
+
+  * TFS (Team Foundation Server)
+
+  * Git
 category: PRO
 ---
