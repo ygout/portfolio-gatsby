@@ -1,6 +1,6 @@
 ---
 startDate: Novembre 2017
-endDate: Aujourd'hui
+endDate: Juillet 2019
 job: Développeur Full Stack
 company: oPhone
 place: Villeurbanne
@@ -33,4 +33,3 @@ description: >-
   * GitLab
 category: PRO
 ---
-
