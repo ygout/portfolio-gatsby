@@ -12,7 +12,7 @@ description: >-
   Développement de services C# pour la partie Vente et Chargement à distance:
 
 
-  * Web API C# 4
+  * Web API, C# Asp.net 4.7.2
 
   * Package PL/SQL Oracle 11g
 
