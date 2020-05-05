@@ -1,5 +1,5 @@
 ---
-name: GitLab
-valueSkill: 3
+name: GitHub
+valueSkill: 4
 category: TOOLS
 ---
