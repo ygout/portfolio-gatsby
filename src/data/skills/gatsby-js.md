@@ -1,6 +1,5 @@
 ---
 name: Gatsby JS
-valueSkill: 50
+valueSkill: 2.5
 category: FRAMEWORK
 ---
-
