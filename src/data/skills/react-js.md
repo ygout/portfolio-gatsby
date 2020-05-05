@@ -1,6 +1,5 @@
 ---
 name: React JS
-valueSkill: 45
+valueSkill: 2.5
 category: FRAMEWORK
 ---
-
