@@ -13,6 +13,9 @@ import { FaBook } from 'react-icons/fa'
 import { Container } from 'reactstrap'
 import { graphql } from 'gatsby';
 import sortByDate from '../helpers/sortByDate';
+import StarRatingComponent from 'react-star-rating-component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons'
 
 const ResumePage = ({ data }) => {
 
@@ -101,42 +104,75 @@ const ResumePage = ({ data }) => {
               />
             </VerticalTimeline>
           </section>
-          <section>
+          <section>   
+          <div class="container">
             <h1 className="text-center">
               <MdSettings />  Compétences
             </h1>
 
-            <div>
-              <div>
-                <div id="languages" className="mt-5">
+              <div className="row mt-5" >
+                <div id="languages" className="col-md-6">
                   {skillsLanguages.map((skill, i) => (
-                    <div key={i} className="mt-2">
-                      <strong>{skill.node.childMarkdownRemark.frontmatter.name}</strong>
-                      <Progress color="info" value={skill.node.childMarkdownRemark.frontmatter.valueSkill}>
-                        {skill.node.childMarkdownRemark.frontmatter.valueSkill + "%"}
-                      </Progress>
+                    <div key={i} className="mt-2 d-flex">
+                      <div className="col-md-6"><h5>{skill.node.childMarkdownRemark.frontmatter.name}</h5></div>
+                      <StarRatingComponent
+                      name={skill.node.childMarkdownRemark.frontmatter.name}
+                      value={skill.node.childMarkdownRemark.frontmatter.valueSkill}
+                      editing={false}
+                      renderStarIcon={() =>  <FontAwesomeIcon icon={faStar} size="2x" />}
+                      renderStarIconHalf={() => {
+                        return (
+                          <span>
+                            <FontAwesomeIcon style={{position: 'absolute'}} icon={faStar} size="2x" />
+                            <FontAwesomeIcon icon={faStarHalf} size="2x" />
+                          </span>
+                        );
+                      }}
+                      ></StarRatingComponent>
                     </div>
                   ))}
                 </div>
-                <div id="frameworks" className="mt-5">
+                <div id="frameworks" className="col-md-6">
                   {skillsFramework.map((skill, i) => (
-                    <div key={i} className="mt-2">
-                      <strong>{skill.node.childMarkdownRemark.frontmatter.name}</strong>
-                      <Progress color="success" value={skill.node.childMarkdownRemark.frontmatter.valueSkill}>
-                        {skill.node.childMarkdownRemark.frontmatter.valueSkill + "%"}
-                      </Progress>
+                    <div key={i} className="mt-2 d-flex">
+                      <div className="col-md-6"><h5>{skill.node.childMarkdownRemark.frontmatter.name}</h5></div>
+                      <StarRatingComponent
+                      name={skill.node.childMarkdownRemark.frontmatter.name}
+                      value={skill.node.childMarkdownRemark.frontmatter.valueSkill}
+                      editing={false}
+                      renderStarIcon={() =>  <FontAwesomeIcon icon={faStar} size="2x" />}
+                      renderStarIconHalf={() => {
+                        return (
+                          <span>
+                            <FontAwesomeIcon style={{position: 'absolute'}} icon={faStar} size="2x" />
+                            <FontAwesomeIcon icon={faStarHalf} size="2x" />
+                          </span>
+                        );
+                      }}
+                      ></StarRatingComponent>
                     </div>
                   ))}
                 </div>
 
-                <div id="tools" className="mt-5">
+                <div id="tools" className="col-md-12">
                   {skillsTools.map((skill, i) => (
-                    <div key={i} className="mt-2">
-                      <strong>{skill.node.childMarkdownRemark.frontmatter.name}</strong>
-                      <Progress color="warning" value={skill.node.childMarkdownRemark.frontmatter.valueSkill}>
-                        {skill.node.childMarkdownRemark.frontmatter.valueSkill + "%"}
-                      </Progress>
-                    </div>
+                    <div key={i} className="mt-2 d-flex">
+                    <div className="col-md-6"><h5>{skill.node.childMarkdownRemark.frontmatter.name}</h5></div>
+                    <StarRatingComponent
+                    name={skill.node.childMarkdownRemark.frontmatter.name}
+                    value={skill.node.childMarkdownRemark.frontmatter.valueSkill}
+                    editing={false}
+                    renderStarIcon={() =>  <FontAwesomeIcon icon={faStar} size="2x" />}
+                    renderStarIconHalf={() => {
+                      return (
+                        <span>
+                          <FontAwesomeIcon style={{position: 'absolute'}} icon={faStar} size="2x" />
+                          <FontAwesomeIcon icon={faStarHalf} size="2x" />
+                        </span>
+                      );
+                    }}
+                    ></StarRatingComponent>
+                  </div>
                   ))}
                 </div>
               </div>
