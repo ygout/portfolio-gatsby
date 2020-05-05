@@ -1,6 +1,5 @@
 ---
 name: SQL
-valueSkill: 70
+valueSkill: 4
 category: LANGUAGE
 ---
-
