@@ -17,6 +17,7 @@ const IndexPage = () => (
         `Full Stack`,
         `fullStack`,
         `back-end`,
+        `front-end`,
         `developper`,
         `developpeur`,
         `france`,
@@ -35,8 +36,8 @@ const IndexPage = () => (
       <img alt="avatar" className="img-fluid mb-5 d-block mx-auto image-profile" src={avatar} />
       <h1 className="mb-0">Yohann Goutaret</h1>
       <hr className="star-light"></hr>
-      <h2 className="font-weight-light mb-0">Développeur Full Stack - Back-end</h2>
-      <h4 className="font-weight-light mt-4">A la recherche de nouvelles opportunités dans les régions Rhône Alpes/Drôme (Valence - Grenoble)</h4>
+      <h2 className="font-weight-light mb-0">Développeur Full Stack</h2>
+      <h4 className="font-weight-light mt-4">A la recherche de nouvelles opportunités dans la régions Rhône Alpes (Grenoble)</h4>
     </section>
     
   </Layout>
