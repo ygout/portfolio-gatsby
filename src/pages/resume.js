@@ -140,6 +140,7 @@ const ResumePage = ({ data }) => {
                       name={skill.node.childMarkdownRemark.frontmatter.name}
                       value={skill.node.childMarkdownRemark.frontmatter.valueSkill}
                       editing={false}
+                      starColor={"green"}
                       renderStarIcon={() =>  <FontAwesomeIcon icon={faStar} size="2x" />}
                       renderStarIconHalf={() => {
                         return (
@@ -154,7 +155,7 @@ const ResumePage = ({ data }) => {
                   ))}
                 </div>
 
-                <div id="tools" className="col-md-12">
+                <div id="tools" className="col-md-6 mt-5">
                   {skillsTools.map((skill, i) => (
                     <div key={i} className="mt-2 d-flex">
                     <div className="col-md-6"><h5>{skill.node.childMarkdownRemark.frontmatter.name}</h5></div>
@@ -162,6 +163,7 @@ const ResumePage = ({ data }) => {
                     name={skill.node.childMarkdownRemark.frontmatter.name}
                     value={skill.node.childMarkdownRemark.frontmatter.valueSkill}
                     editing={false}
+                    starColor={"blue"}
                     renderStarIcon={() =>  <FontAwesomeIcon icon={faStar} size="2x" />}
                     renderStarIconHalf={() => {
                       return (
