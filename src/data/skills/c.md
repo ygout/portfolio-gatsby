@@ -1,5 +1,5 @@
 ---
 name: 'C# - ASP.NET 4.7.2'
-valueSkill: 50
+valueSkill: 3
 category: LANGUAGE
 ---
