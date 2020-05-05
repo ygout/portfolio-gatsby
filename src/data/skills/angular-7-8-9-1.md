@@ -1,5 +1,5 @@
 ---
-name: Angular 7/8/9
-valueSkill: 3
+name: Bootstrap 4
+valueSkill: 2
 category: FRAMEWORK
 ---
