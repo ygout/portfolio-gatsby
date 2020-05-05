@@ -1,6 +1,5 @@
 ---
 name: HTML 5
-valueSkill: 80
+valueSkill: 4
 category: LANGUAGE
 ---
-
