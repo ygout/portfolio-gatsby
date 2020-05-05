@@ -1,6 +1,5 @@
 ---
 name: CSS3
-valueSkill: 75
+valueSkill: 3
 category: LANGUAGE
 ---
-
