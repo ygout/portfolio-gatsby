@@ -1,5 +1,5 @@
 ---
-name: GitHub
-valueSkill: 4
+name: TFS (Team Foundaition Server)
+valueSkill: 2
 category: TOOLS
 ---
