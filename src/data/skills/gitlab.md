@@ -1,5 +1,5 @@
 ---
-name: TFS (Team Foundaition Server)
+name: Jenkins
 valueSkill: 2
 category: TOOLS
 ---
