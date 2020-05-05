@@ -1,5 +1,5 @@
 ---
-name: Angular 7/8/9
-valueSkill: 3
+name: 'C# .net core'
+valueSkill: 2.5
 category: FRAMEWORK
 ---
