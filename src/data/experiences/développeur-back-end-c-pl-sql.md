@@ -5,7 +5,7 @@ job: 'Développeur Back-End C# PL/SQL'
 company: Synchrone
 place: Valence
 description: >-
-  En mission chez le client Conduent Buissiness spécialisé dans les systèmes
+  En mission chez le client Conduent Business spécialisé dans les systèmes
   billettiques.
 
 
