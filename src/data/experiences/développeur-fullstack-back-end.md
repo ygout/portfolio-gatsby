@@ -9,9 +9,8 @@ description: >-
   et gestion de flottes de transports sous **Oracle**, Application Express 5.
 
 
-  Optimisation de requêtes **SQL** améliorations des performances.
-
-  Développement de nouveaux modules en **PL/SQL**
+  Optimisation de requêtes **SQL** améliorations des performances. Développement
+  de nouveaux modules en **PL/SQL**
 
 
   Développement actif sur l'API Rest pour permettre l'ouverture du Système
@@ -31,5 +30,7 @@ description: >-
   * View Pug
 
   * GitLab
+
+  * Angular 4+
 category: PRO
 ---
