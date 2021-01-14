@@ -1,5 +1,5 @@
 ---
-name: Angular 4+ / 8
+name: Angular 10
 valueSkill: 3
 category: FRAMEWORK
 ---
