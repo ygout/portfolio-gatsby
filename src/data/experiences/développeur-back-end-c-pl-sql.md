@@ -1,6 +1,6 @@
 ---
 startDate: Juillet 2019
-endDate: Aujourd'hui
+endDate: Septembre 2020
 job: 'Développeur Back-End C# PL/SQL'
 company: Synchrone
 place: Valence
