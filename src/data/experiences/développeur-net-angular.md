@@ -1,6 +1,6 @@
 ---
 startDate: Septembre 2020
-endDate: Décembre 2020
+endDate: Novembre 2020
 job: Développeur .Net / Angular
 company: Inetum
 place: Grenoble
